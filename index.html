@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self' https://wa.me" />
+  <meta name="referrer" content="strict-origin-when-cross-origin" />
+  <title data-i18n="meta.title">Kaztop — полимерные наливные полы по Казахстану</title>
+  <meta name="description" data-i18n-attr="content:meta.description" content="" />
+  <meta name="theme-color" content="#00afca" />
+  <!-- canonical / og:url / og:image: {{SITE_URL}} заполнить при деплое (см. CLIENT-DATA.md) -->
+  <link rel="canonical" href="{{SITE_URL}}/" />
+  <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg" />
+  <link rel="apple-touch-icon" href="assets/img/favicon.svg" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Kaztop" />
+  <meta property="og:title" content="Kaztop — полимерные наливные полы по Казахстану" />
+  <meta property="og:description" content="Проектируем и заливаем полимерные наливные полы для жилых комплексов, торговых центров, паркингов и производств. Работаем по всему Казахстану." />
+  <meta property="og:url" content="{{SITE_URL}}/" />
+  <meta property="og:image" content="{{SITE_URL}}/assets/img/og-cover.png" />
+  <meta property="og:locale" content="ru_RU" />
+  <meta property="og:locale:alternate" content="kk_KZ" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Kaztop — полимерные наливные полы по Казахстану" />
+  <meta name="twitter:description" content="Полимерные наливные полы для жилых комплексов, торговых центров, паркингов и производств. По всему Казахстану." />
+  <meta name="twitter:image" content="{{SITE_URL}}/assets/img/og-cover.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Unbounded:wght@600;700;800&display=swap" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+  <!-- grain / noise texture overlay -->
+  <div class="grain" aria-hidden="true"></div>
+
+  <!-- ============ HEADER / NAV ============ -->
+  <header class="site-header" id="top" data-state="top">
+    <div class="container header__inner">
+      <a class="brand" href="#top" aria-label="Kaztop">
+        <svg class="brand__logo" viewBox="0 0 100 100" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linejoin="round" stroke-linecap="round"><line x1="50.00" y1="4.00" x2="10.16" y2="27.00"/><line x1="10.16" y1="27.00" x2="10.16" y2="73.00"/><line x1="10.16" y1="73.00" x2="50.00" y2="96.00"/><line x1="50.00" y1="96.00" x2="89.84" y2="73.00"/><line x1="89.84" y1="73.00" x2="89.84" y2="27.00"/><line x1="89.84" y1="27.00" x2="50.00" y2="4.00"/><line x1="67.02" y1="20.52" x2="32.98" y2="20.52"/><line x1="32.98" y1="20.52" x2="15.96" y2="50.00"/><line x1="15.96" y1="50.00" x2="32.98" y2="79.48"/><line x1="32.98" y1="79.48" x2="67.02" y2="79.48"/><line x1="67.02" y1="79.48" x2="84.04" y2="50.00"/><line x1="84.04" y1="50.00" x2="67.02" y2="20.52"/><line x1="50.00" y1="4.00" x2="32.98" y2="20.52"/><line x1="50.00" y1="4.00" x2="67.02" y2="20.52"/><line x1="10.16" y1="27.00" x2="15.96" y2="50.00"/><line x1="10.16" y1="27.00" x2="32.98" y2="20.52"/><line x1="10.16" y1="73.00" x2="32.98" y2="79.48"/><line x1="10.16" y1="73.00" x2="15.96" y2="50.00"/><line x1="50.00" y1="96.00" x2="32.98" y2="79.48"/><line x1="50.00" y1="96.00" x2="67.02" y2="79.48"/><line x1="89.84" y1="73.00" x2="67.02" y2="79.48"/><line x1="89.84" y1="73.00" x2="84.04" y2="50.00"/><line x1="89.84" y1="27.00" x2="67.02" y2="20.52"/><line x1="89.84" y1="27.00" x2="84.04" y2="50.00"/></svg>
+        <span class="brand__mark">KAZTOP</span>
+        <span class="brand__dot" title="Сделано в Казахстане"></span>
+      </a>
+
+      <nav class="nav" aria-label="Основная навигация">
+        <a href="#systems" data-i18n="nav.systems">Системы</a>
+        <a href="#decor" data-i18n="nav.decor">Цвета</a>
+        <a href="#objects" data-i18n="nav.objects">Объекты</a>
+        <a href="#process" data-i18n="nav.process">Этапы</a>
+        <a href="#prices" data-i18n="nav.prices">Цены</a>
+        <a href="#about" data-i18n="nav.about">О компании</a>
+        <a href="#contacts" data-i18n="nav.contacts">Контакты</a>
+      </nav>
+
+      <div class="header__actions">
+        <a class="icon-btn header__call" href="#contacts" id="header-call" aria-label="Позвонить" data-i18n-attr="aria-label:nav.call">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        </a>
+        <a class="icon-btn header__wa" href="#" id="header-whatsapp" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp" data-i18n-attr="aria-label:contacts.whatsapp_label">
+          <svg viewBox="0 0 24 24" width="19" height="19" fill="currentColor" aria-hidden="true"><path d="M.06 24l1.69-6.16a11.87 11.87 0 0 1-1.6-5.95C.15 5.32 5.5 0 12.06 0a11.82 11.82 0 0 1 8.42 3.49 11.78 11.78 0 0 1 3.48 8.4c0 6.55-5.35 11.88-11.91 11.88a12 12 0 0 1-5.71-1.45L.06 24zm6.54-3.8c1.68 1 3.28 1.59 5.45 1.59 5.45 0 9.89-4.42 9.89-9.88a9.8 9.8 0 0 0-2.9-7 9.72 9.72 0 0 0-6.98-2.9c-5.46 0-9.9 4.43-9.9 9.88a9.78 9.78 0 0 0 1.51 5.26l-1 3.65 3.93-1.6zm11.3-5.6c-.07-.12-.27-.2-.56-.34s-1.76-.87-2.03-.97-.47-.15-.67.15-.77.96-.94 1.16-.34.22-.63.08a8.13 8.13 0 0 1-2.39-1.47 9 9 0 0 1-1.66-2.06c-.17-.3 0-.46.13-.6s.3-.34.44-.52a2 2 0 0 0 .3-.5.55.55 0 0 0-.03-.52c-.07-.15-.67-1.62-.92-2.22s-.49-.5-.67-.51h-.57a1.1 1.1 0 0 0-.8.37 3.35 3.35 0 0 0-1.04 2.49 5.8 5.8 0 0 0 1.22 3.09 13.3 13.3 0 0 0 5.1 4.5c.71.31 1.27.5 1.7.63.72.23 1.37.2 1.88.12.58-.09 1.76-.72 2-1.41s.26-1.29.18-1.42z"/></svg>
+        </a>
+        <a class="icon-btn header__ig" href="https://www.instagram.com/kaztop_kz/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" data-i18n-attr="aria-label:footer.instagram">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+        </a>
+        <div class="lang-switch" role="group" aria-label="Язык / Тіл">
+          <button type="button" class="lang-btn" data-lang="kk">ҚАЗ</button>
+          <button type="button" class="lang-btn" data-lang="ru">RU</button>
+        </div>
+        <a href="#form" class="btn btn--accent btn--sm" data-i18n="nav.cta">Получить расчёт</a>
+        <button type="button" class="nav-toggle" aria-label="Меню" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ============ 1. HERO ============ -->
+    <section class="hero" id="hero">
+      <div class="hero__bg" aria-hidden="true"></div>
+      <!-- живой WebGL «налив» (fallback к градиенту, если WebGL недоступен) -->
+      <canvas class="hero__canvas" id="hero-canvas" aria-hidden="true"></canvas>
+      <!-- {{HERO_MODEL_URL}}: Three.js-сцена с .glb (Blender MCP / Sketchfab). Пусто → шейдер -->
+      <canvas class="hero__canvas hero__model is-off" id="hero-model" aria-hidden="true"></canvas>
+      <!-- {{SPLINE_SCENE_URL}}: слот под 3D-сцену Spline. Пусто → работает шейдер -->
+      <div class="hero__spline" id="hero-spline" aria-hidden="true"></div>
+      <div class="hero__veil" aria-hidden="true"></div>
+      <!-- абстрактное золотое свечение (свет, не «солнце»: без диска/лучей) -->
+      <div class="hero__glow" aria-hidden="true"></div>
+      <!-- живая карта Казахстана: маршруты-«перелёты» от Астаны. Генерируется
+           scripts/build-geomap.py между маркерами — правки вручную не сохранятся -->
+      <div class="hero__map" aria-hidden="true">
+        <!-- HERO-MAP:START -->
+        <svg class="geo-svg" viewBox="0 0 1000 564" style="--n:17" role="img" aria-label="Карта Казахстана: география работ Kaztop" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet">
+          <path class="geo-contour" d="M593.1,483.3 L584.6,490.7 L580.7,489.2 L573.2,498.2 L551.2,512.0 L537.8,531.2 L537.6,540.1 L533.9,540.2 L525.3,533.6 L526.8,525.9 L522.7,520.0 L494.0,520.6 L489.1,492.1 L477.6,491.8 L479.8,457.3 L472.8,461.3 L465.6,446.1 L451.8,432.0 L441.0,437.7 L412.1,435.0 L383.7,439.8 L364.3,416.2 L360.7,408.3 L303.3,367.7 L243.0,387.3 L243.1,515.6 L230.4,516.5 L216.8,493.2 L199.6,480.2 L174.7,486.8 L161.6,499.6 L160.9,488.4 L164.5,477.0 L164.0,465.4 L147.7,461.5 L141.1,451.5 L133.6,450.9 L133.7,440.1 L122.7,415.3 L111.0,410.7 L109.2,405.9 L112.9,400.2 L139.4,403.5 L133.9,400.4 L126.9,389.8 L136.4,374.6 L160.0,373.0 L178.1,375.5 L168.1,367.1 L176.6,345.5 L174.9,335.5 L177.4,328.8 L175.1,322.2 L171.5,318.8 L161.4,317.5 L153.3,323.2 L130.8,313.4 L113.1,321.4 L100.6,331.3 L88.0,334.0 L88.4,337.8 L86.6,336.9 L85.3,340.4 L70.8,332.4 L68.6,326.5 L77.2,327.5 L79.0,325.1 L60.4,292.4 L44.4,289.1 L40.0,291.3 L35.3,284.1 L34.7,274.1 L25.2,267.8 L24.0,262.2 L26.2,254.1 L33.9,242.1 L28.5,234.5 L29.0,229.8 L33.0,217.5 L38.9,212.3 L40.8,202.8 L44.9,198.3 L49.6,199.1 L64.4,217.3 L74.3,214.9 L76.2,211.9 L71.1,190.9 L75.4,191.3 L87.5,182.6 L91.5,174.5 L110.5,166.2 L121.9,151.9 L130.5,154.8 L134.7,160.8 L140.9,160.5 L155.2,152.6 L163.4,160.6 L181.3,160.6 L200.1,176.0 L209.8,193.6 L212.0,189.3 L209.6,179.3 L211.8,177.0 L236.2,192.0 L255.1,176.7 L267.2,175.1 L277.3,181.3 L282.3,180.0 L286.6,174.2 L298.7,175.2 L311.0,188.1 L324.3,190.7 L326.0,195.1 L332.7,192.0 L338.5,182.6 L347.0,188.6 L359.1,188.0 L369.6,182.3 L374.2,169.4 L373.5,166.1 L348.0,154.7 L346.2,150.4 L337.8,144.8 L360.4,130.7 L355.2,118.8 L361.6,108.5 L385.8,107.3 L375.9,99.5 L365.2,97.5 L365.9,91.9 L373.0,89.2 L360.0,85.8 L365.9,71.9 L382.2,74.4 L441.4,59.1 L456.1,60.7 L465.2,50.8 L527.8,38.4 L529.9,35.8 L529.0,32.0 L547.0,24.0 L559.1,25.1 L575.2,31.9 L588.2,27.0 L598.7,51.6 L596.5,65.1 L617.8,65.4 L622.1,61.2 L628.2,74.6 L631.4,72.7 L632.3,67.9 L646.5,74.0 L657.7,71.1 L657.0,75.0 L648.2,82.8 L650.6,91.9 L661.2,85.9 L672.7,90.5 L675.0,84.9 L693.0,76.3 L698.1,69.4 L730.8,57.1 L726.5,67.5 L721.1,67.3 L722.6,71.8 L754.7,98.1 L792.4,160.2 L804.4,185.3 L814.7,179.3 L815.2,171.0 L822.0,167.2 L831.1,170.7 L829.8,178.5 L837.2,178.9 L839.0,186.5 L863.1,186.9 L869.3,181.1 L883.3,177.6 L897.0,185.3 L905.9,204.0 L921.4,210.2 L921.7,216.1 L927.1,225.8 L949.3,229.9 L960.9,220.1 L962.2,223.0 L959.7,227.6 L976.0,244.3 L964.0,245.6 L961.9,257.9 L957.9,263.8 L939.2,268.8 L934.0,285.2 L937.0,308.3 L933.0,315.0 L916.7,323.1 L913.9,318.2 L898.7,318.2 L875.6,310.7 L858.9,366.3 L865.8,372.3 L863.7,382.7 L857.8,379.4 L850.2,381.5 L844.3,374.9 L806.2,386.9 L801.8,391.2 L816.0,397.1 L813.1,402.8 L813.1,418.6 L823.1,451.3 L813.9,455.5 L817.4,461.4 L809.5,466.3 L809.7,485.3 L802.9,477.5 L791.4,475.0 L784.4,464.8 L734.3,457.9 L707.5,459.2 L702.7,463.5 L696.4,462.7 L669.4,448.6 L654.1,456.9 L651.0,471.2 L652.6,477.6 L612.1,463.2 L600.3,466.3 L591.8,480.1 L593.1,483.3 Z"/>
+          <g class="geo-arcs">
+            <path class="geo-arc" style="--len:482;--i:0" d="M605.3,171.8 Q370.8,76.6 135.3,169.4"/>
+            <path class="geo-arc" style="--len:202;--i:1" d="M605.3,171.8 Q527.9,99.3 421.8,100.2"/>
+            <path class="geo-arc" style="--len:91;--i:2" d="M605.3,171.8 Q595.9,125.1 556.9,97.7"/>
+            <path class="geo-arc" style="--len:144;--i:3" d="M605.3,171.8 Q604.1,96.1 551.1,42.2"/>
+            <path class="geo-arc" style="--len:138;--i:4" d="M605.3,171.8 Q661.5,126.4 733.5,132.3"/>
+            <path class="geo-arc geo-arc--real" style="--len:95;--i:5" d="M605.3,171.8 Q646.4,144.0 695.3,152.2"/>
+            <path class="geo-arc" style="--len:212;--i:6" d="M605.3,171.8 Q713.0,144.0 810.1,198.0"/>
+            <path class="geo-arc" style="--len:271;--i:7" d="M605.3,171.8 Q744.0,140.9 865.8,214.1"/>
+            <path class="geo-arc" style="--len:63;--i:8" d="M605.3,171.8 Q633.9,188.0 643.4,219.3"/>
+            <path class="geo-arc geo-arc--real" style="--len:312;--i:9" d="M605.3,171.8 Q724.0,284.9 732.1,448.6"/>
+            <path class="geo-arc" style="--len:296;--i:10" d="M605.3,171.8 Q546.6,315.8 603.4,460.5"/>
+            <path class="geo-arc" style="--len:320;--i:11" d="M605.3,171.8 Q521.5,317.5 561.4,480.8"/>
+            <path class="geo-arc" style="--len:292;--i:12" d="M605.3,171.8 Q512.7,294.1 530.0,446.5"/>
+            <path class="geo-arc" style="--len:268;--i:13" d="M605.3,171.8 Q491.5,254.2 466.0,392.3"/>
+            <path class="geo-arc" style="--len:557;--i:14" d="M605.3,171.8 Q315.4,208.1 130.4,434.3"/>
+            <path class="geo-arc" style="--len:491;--i:15" d="M605.3,171.8 Q348.4,151.3 148.2,313.7"/>
+            <path class="geo-arc" style="--len:345;--i:16" d="M605.3,171.8 Q432.0,120.3 270.9,202.6"/>
+          </g>
+          <g class="geo-cities">
+            <circle class="geo-hub-pulse" cx="605.3" cy="171.8" r="9"/>
+            <circle class="geo-city geo-city--hub" cx="605.3" cy="171.8" r="9"><title>Астана</title></circle>
+            <circle class="geo-city geo-city--real" cx="732.1" cy="448.6" r="5.5"><title>Алматы</title></circle>
+            <circle class="geo-city geo-city--real" cx="695.3" cy="152.2" r="5.5"><title>Экибастуз</title></circle>
+            <circle class="geo-city geo-city--major" cx="561.4" cy="480.8" r="4"><title>Шымкент</title></circle>
+            <circle class="geo-city geo-city--major" cx="643.4" cy="219.3" r="4"><title>Караганда</title></circle>
+            <circle class="geo-city geo-city--major" cx="270.9" cy="202.6" r="4"><title>Актобе</title></circle>
+            <circle class="geo-city geo-city--major" cx="148.2" cy="313.7" r="4"><title>Атырау</title></circle>
+            <circle class="geo-city geo-city--major" cx="865.8" cy="214.1" r="4"><title>Усть-Каменогорск</title></circle>
+            <circle class="geo-city geo-city--major" cx="421.8" cy="100.2" r="4"><title>Костанай</title></circle>
+            <circle class="geo-city geo-city--major" cx="733.5" cy="132.3" r="4"><title>Павлодар</title></circle>
+            <circle class="geo-city geo-city--major" cx="466.0" cy="392.3" r="4"><title>Кызылорда</title></circle>
+            <circle class="geo-city geo-city--major" cx="603.4" cy="460.5" r="4"><title>Тараз</title></circle>
+            <circle class="geo-city geo-city--major" cx="810.1" cy="198.0" r="4"><title>Семей</title></circle>
+            <circle class="geo-city geo-city--major" cx="130.4" cy="434.3" r="4"><title>Актау</title></circle>
+            <circle class="geo-city geo-city--major" cx="135.3" cy="169.4" r="4"><title>Уральск</title></circle>
+            <circle class="geo-city geo-city--major" cx="551.1" cy="42.2" r="4"><title>Петропавловск</title></circle>
+            <circle class="geo-city geo-city--major" cx="530.0" cy="446.5" r="4"><title>Туркестан</title></circle>
+            <circle class="geo-city geo-city--major" cx="556.9" cy="97.7" r="4"><title>Кокшетау</title></circle>
+          </g>
+        </svg>
+        <!-- HERO-MAP:END -->
+      </div>
+      <div class="container hero__inner">
+        <p class="eyebrow eyebrow--light" data-i18n="hero.eyebrow">Сделано в Казахстане · Полимерные полы</p>
+        <h1 class="hero__title" data-i18n="hero.title">Наливные полы промышленного класса по всему Казахстану</h1>
+        <p class="hero__subtitle hero__stat" data-i18n="hero.subtitle">2 020 000 м² залито · 250+ объектов по всему Казахстану</p>
+        <div class="hero__cta">
+          <a href="#form" class="btn btn--accent" data-i18n="hero.cta_primary">Получить расчёт</a>
+        </div>
+      </div>
+      <a href="#systems" class="hero__scroll" aria-label="Вниз"><span></span></a>
+    </section>
+
+    <!-- trust strip — бегущая строка фактов -->
+    <div class="trust">
+      <div class="trust__marquee">
+        <div class="trust__track">
+          <span class="trust__item" data-i18n="trust.made">Сделано в Казахстане</span>
+          <span class="trust__item" data-i18n="trust.poured">Собственное производство</span>
+          <span class="trust__item" data-i18n="trust.lab">Собственная лаборатория</span>
+          <span class="trust__item" data-i18n="trust.iso">Контроль качества ISO 9001</span>
+          <span class="trust__item" data-i18n="trust.cycle">Полный цикл: материалы + монтаж</span>
+          <span class="trust__item" data-i18n="trust.warranty">Гарантия 2 года</span>
+          <span class="trust__item" data-i18n="trust.made" aria-hidden="true">Сделано в Казахстане</span>
+          <span class="trust__item" data-i18n="trust.poured" aria-hidden="true">Собственное производство</span>
+          <span class="trust__item" data-i18n="trust.lab" aria-hidden="true">Собственная лаборатория</span>
+          <span class="trust__item" data-i18n="trust.iso" aria-hidden="true">Контроль качества ISO 9001</span>
+          <span class="trust__item" data-i18n="trust.cycle" aria-hidden="true">Полный цикл: материалы + монтаж</span>
+          <span class="trust__item" data-i18n="trust.warranty" aria-hidden="true">Гарантия 2 года</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- ============ 1. METHOD + SOLUTIONS (как подбираем + под ваш объект) ============ -->
+    <!-- ============ SYSTEMS BY ROOM TYPE ============ -->
+    <section class="section section--alt" id="systems">
+      <div class="container">
+        <header class="section__head">
+          <span class="section__num">01</span>
+          <h2 data-i18n="systems.title">Системы покрытий по типам помещений</h2>
+          <p class="section__sub" data-i18n="systems.subtitle"></p>
+        </header>
+        <div class="systems-grid" id="systems-grid"></div>
+      </div>
+    </section>
+
+    <!-- ============ 2c. SEGMENTS (решения под ваш объект) ============ -->
+    <section class="section section--alt" id="segments">
+      <div class="container">
+        <header class="section__head">
+          <span class="section__num">02</span>
+          <h2 data-i18n="segments.title">Решения под ваш объект</h2>
+          <p class="section__sub" data-i18n="segments.subtitle">Три типовых сценария.</p>
+        </header>
+        <div class="grid grid--3">
+          <article class="seg-card">
+            <img class="seg-card__photo" src="assets/img/segments/seg_developer.webp" loading="lazy" alt="" />
+            <div class="seg-card__body">
+              <h3 data-i18n="segments.developer.title">Застройщикам</h3>
+              <p class="seg-card__pain" data-i18n="segments.developer.pain"></p>
+              <p class="seg-card__solution" data-i18n="segments.developer.solution"></p>
+              <a href="#form" class="link-cta" data-i18n="segments.developer.cta">Получить расчёт</a>
+            </div>
+          </article>
+          <article class="seg-card">
+            <img class="seg-card__photo" src="assets/img/segments/seg_mall.webp" loading="lazy" alt="" />
+            <div class="seg-card__body">
+              <h3 data-i18n="segments.mall.title">Торговым центрам и ритейлу</h3>
+              <p class="seg-card__pain" data-i18n="segments.mall.pain"></p>
+              <p class="seg-card__solution" data-i18n="segments.mall.solution"></p>
+              <a href="#form" class="link-cta" data-i18n="segments.mall.cta">Получить расчёт</a>
+            </div>
+          </article>
+          <article class="seg-card">
+            <img class="seg-card__photo" src="assets/img/segments/seg_parking.webp" loading="lazy" alt="" />
+            <div class="seg-card__body">
+              <h3 data-i18n="segments.parking.title">Паркингам</h3>
+              <p class="seg-card__pain" data-i18n="segments.parking.pain"></p>
+              <p class="seg-card__solution" data-i18n="segments.parking.solution"></p>
+              <a href="#form" class="link-cta" data-i18n="segments.parking.cta">Получить расчёт</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 3b2. DECOR (RAL + флоки, dark) ============ -->
+    <section class="section section--dark section--glow" id="decor">
+      <canvas class="section-fx" id="decor-fx" aria-hidden="true"></canvas>
+      <div class="container">
+        <header class="section__head section__head--light">
+          <span class="section__num">03</span>
+          <h2 data-i18n="palette.title">Цвет и фактура</h2>
+          <p class="section__sub" data-i18n="palette.subtitle"></p>
+        </header>
+        <h3 class="decor__label" data-i18n="palette.ral_label">Стандартные цвета RAL</h3>
+        <div class="ral-grid" id="ral-grid"></div>
+        <h3 class="decor__label" data-i18n="palette.flakes_label">Флоки — типовые композиции</h3>
+        <div class="flake-grid" id="flake-grid"></div>
+        <p class="decor__disclaimer" data-i18n="palette.disclaimer"></p>
+        <div class="center"><a href="#form" class="btn btn--accent" data-i18n="palette.cta">Подобрать цвет</a></div>
+      </div>
+    </section>
+
+    <!-- ============ 4. OBJECTS (dark gallery) ============ -->
+    <section class="section section--dark section--glow" id="objects">
+      <canvas class="section-fx" id="objects-fx" aria-hidden="true"></canvas>
+      <div class="container">
+        <header class="section__head section__head--light">
+          <span class="section__num">04</span>
+          <h2 data-i18n="objects.title">Наши объекты</h2>
+          <p class="section__sub" data-i18n="objects.subtitle">Реальные площадки.</p>
+        </header>
+        <div class="objects-marquee">
+          <div class="grid grid--objects" id="objects-grid"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 4b. PROCESS (этапы работы, light alt) ============ -->
+    <section class="section section--alt" id="process">
+      <div class="container">
+        <header class="section__head">
+          <span class="section__num">05</span>
+          <h2 data-i18n="process.title">Как мы работаем</h2>
+          <p class="section__sub" data-i18n="process.subtitle"></p>
+        </header>
+        <div class="steps" id="steps-grid"></div>
+      </div>
+    </section>
+
+    <!-- ============ 5. PRICES (light) ============ -->
+    <section class="section" id="prices">
+      <div class="container">
+        <header class="section__head">
+          <span class="section__num">06</span>
+          <h2 data-i18n="prices.title">Ориентир по стоимости</h2>
+          <p class="section__sub" data-i18n="prices.subtitle">Без фиксированных таблиц.</p>
+        </header>
+        <div class="price-table" id="price-table"></div>
+        <p class="price-disclaimer" data-i18n="prices.disclaimer"></p>
+        <p class="price-note" data-i18n="prices.note">Точную стоимость инженер посчитает после осмотра объекта.</p>
+        <div class="center">
+          <a href="#form" class="btn btn--accent" data-i18n="prices.cta">Оставить заявку</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 6. ABOUT (light alt) ============ -->
+    <section class="section section--alt" id="about">
+      <div class="container">
+        <header class="section__head">
+          <span class="section__num">07</span>
+          <h2 data-i18n="about.title">О компании</h2>
+          <p class="section__sub" data-i18n="about.lead">Kaztop — казахстанская компания.</p>
+        </header>
+        <div class="grid grid--3">
+          <article class="card about-card about-card--kz">
+            <h3 data-i18n="about.made_in_kz_title">Сделано в Казахстане</h3>
+            <p data-i18n="about.made_in_kz_desc"></p>
+            <p class="qc-label" data-i18n="about.prod_label">Что мы производим</p>
+            <ul class="qc-list">
+              <li data-i18n="about.prod_1">Эпоксидные и полиуретановые грунты</li>
+              <li data-i18n="about.prod_2">Наливные полимерные покрытия</li>
+              <li data-i18n="about.prod_3">Упрочнители бетона (топпинги)</li>
+              <li data-i18n="about.prod_4">Ремонтные и шовные составы</li>
+              <li data-i18n="about.prod_5">Кварцевые пески, флоки и лаки</li>
+            </ul>
+            <button type="button" class="btn btn--sm doc-toggle" id="cert-toggle" aria-expanded="false" aria-controls="cert-gallery" data-i18n="about.certs_btn">Смотреть сертификаты</button>
+            <div class="doc-gallery" id="cert-gallery" hidden>
+              <img class="doc-thumb" src="assets/img/certs/cert1.webp" loading="lazy" alt="Сертификат СТ-KZ № KZ 0 101 00450 — о происхождении товара" data-i18n-attr="alt:about.cert_alt" />
+              <img class="doc-thumb" src="assets/img/certs/cert2.webp" loading="lazy" alt="Сертификат СТ-KZ № KZ 0 101 00450 — дополнительный лист" data-i18n-attr="alt:about.cert_alt2" />
+              <img class="doc-thumb" src="assets/img/certs/cert3.webp" loading="lazy" alt="Сертификат СТ-KZ № KZ 0 101 00450 — дополнительный лист" data-i18n-attr="alt:about.cert_alt2" />
+              <img class="doc-thumb" src="assets/img/certs/cert4.webp" loading="lazy" alt="Сертификат СТ-KZ № KZ 0 101 00450 — дополнительный лист" data-i18n-attr="alt:about.cert_alt2" />
+            </div>
+          </article>
+          <article class="card about-card">
+            <h3 data-i18n="about.experience_title">Качество и стандарты</h3>
+            <p data-i18n="about.experience_desc"></p>
+            <p class="qc-label" data-i18n="about.qc_title">Что мы контролируем</p>
+            <ul class="qc-list">
+              <li data-i18n="about.qc_1">Соответствие ISO 9001</li>
+              <li data-i18n="about.qc_2">Входной и выходной контроль сырья</li>
+              <li data-i18n="about.qc_3">Собственная лаборатория</li>
+              <li data-i18n="about.qc_4">Прочность основания на отрыв ≥ 2 МПа</li>
+              <li data-i18n="about.qc_5">Остаточная влажность бетона ≤ 4%</li>
+            </ul>
+          </article>
+          <article class="card about-card">
+            <h3 data-i18n="about.geo_title">Полный цикл</h3>
+            <p data-i18n="about.geo_desc"></p>
+            <p class="qc-label" data-i18n="about.repair_label">Технология ремонта</p>
+            <ul class="qc-list">
+              <li data-i18n="about.repair_1">Ремонт трещин, выбоин и швов</li>
+              <li data-i18n="about.repair_2">Инъектирование и укрепление основания</li>
+              <li data-i18n="about.repair_3">Конструктивные узлы и примыкания</li>
+              <li data-i18n="about.repair_4">Восстановление старых бетонных полов</li>
+              <li data-i18n="about.repair_5">Полировка бетона и устройство разметки</li>
+            </ul>
+            <button type="button" class="btn btn--sm doc-toggle" id="repair-toggle" aria-expanded="false" aria-controls="repair-gallery" data-i18n="about.repair_btn">Смотреть схемы</button>
+            <div class="doc-gallery" id="repair-gallery" hidden>
+              <img class="doc-thumb" src="assets/img/specs/node_cracks.webp" loading="lazy" alt="Технология ремонта промышленных покрытий: ремонт трещин" data-i18n-attr="alt:about.repair_alt" />
+              <img class="doc-thumb" src="assets/img/specs/node_joints.webp" loading="lazy" alt="Технология ремонта: швы и инъектирование основания" data-i18n-attr="alt:about.repair_alt" />
+              <img class="doc-thumb" src="assets/img/specs/node_units1.webp" loading="lazy" alt="Конструктивные узлы: усадочный, температурный, изоляционный и деформационный швы" data-i18n-attr="alt:about.repair_alt" />
+              <img class="doc-thumb" src="assets/img/specs/node_units2.webp" loading="lazy" alt="Конструктивные узлы: примыкания, плинтусы, закладные детали" data-i18n-attr="alt:about.repair_alt" />
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 7. FORM (dark CTA) ============ -->
+    <section class="section section--dark section--glow" id="form">
+      <canvas class="section-fx" id="form-fx" aria-hidden="true"></canvas>
+      <div class="container">
+        <div class="form-layout">
+          <header class="section__head section__head--light form-intro">
+            <span class="section__num">08</span>
+            <h2 data-i18n="form.title">Заявка на расчёт</h2>
+            <p class="section__sub" data-i18n="form.subtitle">Заполните поля — заявка откроется в WhatsApp.</p>
+          </header>
+          <form id="lead-form" class="lead-form card" novalidate>
+            <div class="field">
+              <label for="f-name" data-i18n="form.name_label">Имя</label>
+              <input id="f-name" name="name" type="text" required data-i18n-attr="placeholder:form.name_placeholder" />
+            </div>
+            <div class="field">
+              <label for="f-phone" data-i18n="form.phone_label">Телефон</label>
+              <input id="f-phone" name="phone" type="tel" required data-i18n-attr="placeholder:form.phone_placeholder" />
+            </div>
+            <div class="field">
+              <label for="f-type" data-i18n="form.type_label">Тип объекта</label>
+              <select id="f-type" name="type">
+                <option value="industrial" data-i18n="form.type_options.industrial">Производство / склад</option>
+                <option value="mall" data-i18n="form.type_options.mall">Торговый центр / ритейл</option>
+                <option value="parking" data-i18n="form.type_options.parking">Паркинг</option>
+                <option value="other" data-i18n="form.type_options.other">Другое</option>
+              </select>
+            </div>
+            <!-- предзаполняется при клике «Рассчитать этот пол» в секции «Системы» -->
+            <input type="hidden" name="system" id="f-system" value="" />
+            <div class="field">
+              <label for="f-area" data-i18n="form.area_label">Площадь, м²</label>
+              <input id="f-area" name="area" type="number" min="0" inputmode="numeric" data-i18n-attr="placeholder:form.area_placeholder" />
+            </div>
+            <p class="form-error" id="form-error" data-i18n="form.validation" hidden></p>
+            <p class="form-notice" id="form-notice" data-i18n="form.disabled_notice" hidden>Приём заявок скоро откроется.</p>
+            <button type="submit" class="btn btn--accent btn--block" data-i18n="form.submit">Отправить в WhatsApp</button>
+            <p class="form-disclaimer" data-i18n="form.disclaimer">Нажимая кнопку, вы открываете WhatsApp.</p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 8. CONTACTS (light) ============ -->
+    <!-- ============ SPONSORSHIP (marquee) ============ -->
+    <section class="sponsors section--glow" id="sponsors" aria-label="Спонсорство">
+      <canvas class="section-fx" id="sponsors-fx" aria-hidden="true"></canvas>
+      <div class="container">
+        <p class="sponsors__title" data-i18n="sponsors.title">Поддерживаем спорт</p>
+        <p class="sponsors__sub section__sub" data-i18n="sponsors.subtitle"></p>
+      </div>
+      <div class="sponsors__marquee" aria-hidden="true">
+        <div class="sponsors__track" id="sponsors-track"></div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ LIGHTBOX (увеличение картинок) ============ -->
+  <div class="lightbox" id="lightbox" hidden>
+    <button type="button" class="lightbox__close" id="lightbox-close" aria-label="Закрыть" data-i18n-attr="aria-label:lightbox.close">&times;</button>
+    <img class="lightbox__img" id="lightbox-img" alt="" />
+  </div>
+
+  <!-- ============ FOOTER ============ -->
+  <!-- mobile floating contact bar -->
+  <div class="floating-bar" id="floating-bar" aria-label="Быстрый контакт">
+    <a class="fab fab--call" href="#contacts" id="floating-call" aria-label="Позвонить" data-i18n-attr="aria-label:floating.call">
+      <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+    </a>
+    <a class="fab fab--wa" href="#" id="floating-whatsapp" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp" data-i18n-attr="aria-label:floating.whatsapp">
+      <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor" aria-hidden="true"><path d="M.06 24l1.69-6.16a11.87 11.87 0 0 1-1.6-5.95C.15 5.32 5.5 0 12.06 0a11.82 11.82 0 0 1 8.42 3.49 11.78 11.78 0 0 1 3.48 8.4c0 6.55-5.35 11.88-11.91 11.88a12 12 0 0 1-5.71-1.45L.06 24zm6.54-3.8c1.68 1 3.28 1.59 5.45 1.59 5.45 0 9.89-4.42 9.89-9.88a9.8 9.8 0 0 0-2.9-7 9.72 9.72 0 0 0-6.98-2.9c-5.46 0-9.9 4.43-9.9 9.88a9.78 9.78 0 0 0 1.51 5.26l-1 3.65 3.93-1.6zm11.3-5.6c-.07-.12-.27-.2-.56-.34s-1.76-.87-2.03-.97-.47-.15-.67.15-.77.96-.94 1.16-.34.22-.63.08a8.13 8.13 0 0 1-2.39-1.47 9 9 0 0 1-1.66-2.06c-.17-.3 0-.46.13-.6s.3-.34.44-.52a2 2 0 0 0 .3-.5.55.55 0 0 0-.03-.52c-.07-.15-.67-1.62-.92-2.22s-.49-.5-.67-.51h-.57a1.1 1.1 0 0 0-.8.37 3.35 3.35 0 0 0-1.04 2.49 5.8 5.8 0 0 0 1.22 3.09 13.3 13.3 0 0 0 5.1 4.5c.71.31 1.27.5 1.7.63.72.23 1.37.2 1.88.12.58-.09 1.76-.72 2-1.41s.26-1.29.18-1.42z"/></svg>
+    </a>
+  </div>
+
+  <footer class="site-footer" id="contacts">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__brand">
+          <span class="brand__mark">KAZTOP</span>
+          <p class="footer__tagline" data-i18n="footer.tagline">Полимерные наливные полы. Сделано в Казахстане.</p>
+        </div>
+        <div class="footer__contacts">
+          <p class="footer__col-title" data-i18n="contacts.title">Контакты</p>
+          <a class="footer__wa-btn" id="contact-whatsapp" href="#" target="_blank" rel="noopener noreferrer">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M.06 24l1.69-6.16a11.87 11.87 0 0 1-1.6-5.95C.15 5.32 5.5 0 12.06 0a11.82 11.82 0 0 1 8.42 3.49 11.78 11.78 0 0 1 3.48 8.4c0 6.55-5.35 11.88-11.91 11.88a12 12 0 0 1-5.71-1.45L.06 24zm6.54-3.8c1.68 1 3.28 1.59 5.45 1.59 5.45 0 9.89-4.42 9.89-9.88a9.8 9.8 0 0 0-2.9-7 9.72 9.72 0 0 0-6.98-2.9c-5.46 0-9.9 4.43-9.9 9.88a9.78 9.78 0 0 0 1.51 5.26l-1 3.65 3.93-1.6zm11.3-5.6c-.07-.12-.27-.2-.56-.34s-1.76-.87-2.03-.97-.47-.15-.67.15-.77.96-.94 1.16-.34.22-.63.08a8.13 8.13 0 0 1-2.39-1.47 9 9 0 0 1-1.66-2.06c-.17-.3 0-.46.13-.6s.3-.34.44-.52a2 2 0 0 0 .3-.5.55.55 0 0 0-.03-.52c-.07-.15-.67-1.62-.92-2.22s-.49-.5-.67-.51h-.57a1.1 1.1 0 0 0-.8.37 3.35 3.35 0 0 0-1.04 2.49 5.8 5.8 0 0 0 1.22 3.09 13.3 13.3 0 0 0 5.1 4.5c.71.31 1.27.5 1.7.63.72.23 1.37.2 1.88.12.58-.09 1.76-.72 2-1.41s.26-1.29.18-1.42z"/></svg>
+            <span data-i18n="contacts.whatsapp_value">Написать в WhatsApp</span>
+          </a>
+          <ul class="footer__contact-list">
+            <li>
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              <a href="tel:+77012448871" data-i18n="contacts.phone_value">+7 701 244 8871</a>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              <span data-i18n="contacts.address_value">г. Астана, проспект Аблайхана 5/3</span>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+              <span data-i18n="contacts.hours_value">Пн–Вс · 9:00–18:00</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>© <span id="year"></span> <span data-i18n="footer.rights">Kaztop. Все права защищены.</span></p>
+        <p class="footer__requisites" data-i18n="footer.requisites"></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/app.js" defer></script>
+</body>
+</html>
