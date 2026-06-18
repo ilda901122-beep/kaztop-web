@@ -491,6 +491,8 @@ h3 { font-family: var(--font-body); font-weight: 700; font-size: clamp(1.15rem, 
 .decor__label:first-of-type { margin-top: 0; }
 .decor__disclaimer { font-size: 0.82rem; color: var(--on-dark-muted); margin: 1.4rem 0 1.6rem; max-width: 60ch; }
 /* горизонтальная прокрутка палитры (RAL + флоки) */
+.ral-grid { min-height: 116px; }
+.flake-grid { min-height: 150px; }
 .ral-grid, .flake-grid {
   display: flex; flex-wrap: nowrap; gap: 0.8rem; overflow-x: auto; overflow-y: hidden;
   padding-bottom: 1.1rem; -webkit-overflow-scrolling: touch;
@@ -541,7 +543,7 @@ h3 { font-family: var(--font-body); font-weight: 700; font-size: clamp(1.15rem, 
 /* объекты — авто-бегущая лента фото */
 /* лента работ: авто-прокрутка (JS) + ручной скролл/свайп/драг */
 .objects-marquee {
-  position: relative; width: 100%;
+  position: relative; width: 100%; min-height: 252px;
   overflow-x: auto; overflow-y: hidden; -webkit-overflow-scrolling: touch;
   padding-bottom: 0.9rem; cursor: grab;
   -webkit-mask-image: linear-gradient(90deg, transparent, #000 4%, #000 96%, transparent);
