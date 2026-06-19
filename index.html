@@ -28,8 +28,6 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Unbounded:wght@600;700;800&display=swap" />
   <link rel="stylesheet" href="assets/css/styles.css" />
-  <!-- LCP: фон hero -->
-  <link rel="preload" as="image" href="assets/img/objects/work01.webp" />
 </head>
 <body>
   <!-- grain / noise texture overlay -->
@@ -81,9 +79,7 @@
     <section class="hero" id="hero">
       <div class="hero__bg" aria-hidden="true"></div>
       <!-- живой WebGL «налив» (fallback к градиенту, если WebGL недоступен) -->
-      <canvas class="hero__canvas is-off" id="hero-canvas" aria-hidden="true"></canvas>
-      <!-- hero-фон: реальное фото наливного пола (продукт = герой) -->
-      <div class="hero__photo" aria-hidden="true"></div>
+      <canvas class="hero__canvas" id="hero-canvas" aria-hidden="true"></canvas>
       <!-- {{HERO_MODEL_URL}}: Three.js-сцена с .glb (Blender MCP / Sketchfab). Пусто → шейдер -->
       <canvas class="hero__canvas hero__model is-off" id="hero-model" aria-hidden="true"></canvas>
       <!-- {{SPLINE_SCENE_URL}}: слот под 3D-сцену Spline. Пусто → работает шейдер -->

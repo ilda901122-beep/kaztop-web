@@ -179,11 +179,6 @@ h3 { font-family: var(--font-body); font-weight: 700; font-size: clamp(1.15rem, 
 /* live WebGL "poured resin" surface */
 .hero__canvas { position: absolute; inset: 0; z-index: 0; width: 100%; height: 100%; display: block; }
 .hero__canvas.is-off { display: none; }
-/* реальное фото наливного пола как фон hero (продукт = герой) */
-.hero__photo {
-  position: absolute; inset: 0; z-index: 0;
-  background: var(--kz-deep) url("../img/objects/work01.webp") center 74% / cover no-repeat;
-}
 /* optional Spline 3D scene slot */
 .hero__spline { position: absolute; inset: 0; z-index: 0; }
 .hero__spline.is-active { z-index: 1; }
@@ -191,9 +186,7 @@ h3 { font-family: var(--font-body); font-weight: 700; font-size: clamp(1.15rem, 
 /* readability veil over the animated layer */
 .hero__veil {
   position: absolute; inset: 0; z-index: 1; pointer-events: none;
-  background:
-    linear-gradient(100deg, rgba(4, 20, 26, 0.9) 0%, rgba(4, 20, 26, 0.55) 46%, rgba(4, 20, 26, 0.15) 100%),
-    linear-gradient(0deg, rgba(4, 20, 26, 0.55) 0%, rgba(4, 20, 26, 0) 42%);
+  background: linear-gradient(95deg, rgba(4, 20, 26, 0.92) 0%, rgba(4, 20, 26, 0.55) 48%, rgba(4, 20, 26, 0.12) 100%);
 }
 /* абстрактное золотое свечение — мягкий свет (НЕ «солнце»: без диска и лучей) */
 .hero__glow {
@@ -240,9 +233,9 @@ h3 { font-family: var(--font-body); font-weight: 700; font-size: clamp(1.15rem, 
   82%      { transform: translate(2%, 2%) scale(1.02) rotate(0.4deg); }
 }
 .hero__inner { position: relative; z-index: 3; max-width: var(--maxw); }
-.hero__title { color: #fff; margin-bottom: 0.9rem; font-size: clamp(1.9rem, 4.8vw, 3.4rem); max-width: 16ch; text-shadow: 0 2px 14px rgba(0, 0, 0, 0.5); }
+.hero__title { color: #fff; margin-bottom: 0.9rem; font-size: clamp(1.9rem, 4.8vw, 3.4rem); max-width: 16ch; }
 .hero__subtitle { font-size: clamp(1.05rem, 2.1vw, 1.3rem); color: var(--on-dark-muted); max-width: 600px; margin: 0 0 1.2rem; }
-.hero__stat { color: #fff; font-family: var(--font-display); font-weight: 700; font-size: clamp(1.25rem, 3vw, 1.95rem); line-height: 1.25; max-width: 640px; text-shadow: 0 2px 14px rgba(0, 0, 0, 0.55); }
+.hero__stat { color: #fff; font-family: var(--font-display); font-weight: 700; font-size: clamp(1.25rem, 3vw, 1.95rem); line-height: 1.25; max-width: 640px; }
 .hero__stat::first-line { color: var(--gold); }
 .hero__cta { display: flex; flex-wrap: wrap; gap: 0.8rem; margin-bottom: 1.4rem; }
 .hero__monaco { display: inline-flex; flex-direction: column; gap: 0.2rem; border-left: 2px solid var(--gold); padding: 0.3rem 0 0.3rem 1.1rem; max-width: 540px; }
@@ -430,7 +423,7 @@ h3 { font-family: var(--font-body); font-weight: 700; font-size: clamp(1.15rem, 
   .grid--objects { grid-template-columns: 1fr 1fr; }
   .footer__inner { flex-direction: row; justify-content: space-between; align-items: flex-start; gap: 2.5rem; }
   .hero__scroll { display: block; }
-  .hero__map { top: 13%; bottom: auto; right: -2%; transform: none; width: clamp(380px, 46vw, 620px); opacity: 0.5; }
+  .hero__map { top: 13%; bottom: auto; right: -2%; transform: none; width: clamp(380px, 46vw, 620px); opacity: 0.95; }
 }
 @media (min-width: 940px) {
   .grid--3 { grid-template-columns: repeat(3, 1fr); }

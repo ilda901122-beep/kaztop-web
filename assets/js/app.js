@@ -1051,7 +1051,8 @@
     initYear();
     initReveal();
     initCount();
-    // hero-фон — реальное фото наливного пола (assets/img/objects/work01.webp); шейдер/Spline отключены
+    // приоритет hero-визуала: Spline (если задан URL) → WebGL-шейдер
+    if (!initSpline()) initHero3D();
     initSectionFx();
     initObjectsScroll();
     initStripAutoScroll(document.getElementById("ral-grid"));
