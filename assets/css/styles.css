@@ -250,6 +250,10 @@ h3 { font-family: var(--font-body); font-weight: 700; font-size: clamp(1.15rem, 
   .hero__inner { display: flex; flex-direction: column; }
   .hero__stat { margin-top: auto; }
 }
+/* десктоп: цифра + кнопка опущены ниже заголовка (больше воздуха в hero) */
+@media (min-width: 680px) {
+  .hero__stat { margin-top: clamp(2.5rem, 13vh, 7.5rem); }
+}
 
 /* ---------- Ticker / marquee ---------- */
 .trust { background: var(--ink); border-top: 1px solid var(--line-dark); border-bottom: 1px solid var(--line-dark); overflow: hidden; }
