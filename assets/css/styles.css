@@ -148,8 +148,8 @@ h3 { font-family: var(--font-body); font-weight: 700; font-size: clamp(1.15rem, 
 .nav a:hover { color: var(--kz); }
 
 .header__actions { display: flex; align-items: center; gap: 0.6rem; }
-/* на мобайле звонок и WhatsApp дублируются плавающей панелью — прячем, оставляя Instagram */
-.header__actions .header__call, .header__actions .header__wa { display: none; }
+/* на мобайле звонок, WhatsApp и Instagram дублируются плавающей панелью — прячем (место под «бургер») */
+.header__actions .header__call, .header__actions .header__wa, .header__actions .header__ig { display: none; }
 .lang-switch { display: inline-flex; border: 1px solid var(--line-strong); border-radius: 999px; overflow: hidden; }
 .lang-btn { background: transparent; border: 0; color: var(--muted); font-family: var(--font-display); padding: 0.52rem 0.95rem; font-size: 0.9rem; font-weight: 700; cursor: pointer; transition: background 0.15s ease, color 0.15s ease; }
 .lang-btn.is-active { background: var(--kz); color: #fff; }
@@ -211,10 +211,11 @@ h3 { font-family: var(--font-body); font-weight: 700; font-size: clamp(1.15rem, 
 .section--glow::after { content: ""; position: absolute; inset: 0; z-index: 0; background: rgba(3, 12, 17, 0.62); pointer-events: none; }
 /* живая карта Казахстана: маршруты-«перелёты» от Астаны (фон-декор справа) */
 .hero__map {
-  /* мобайл: карта в правом нижнем углу */
-  position: absolute; z-index: 1; top: auto; bottom: 0; right: 0; left: auto;
-  width: clamp(220px, 62vw, 340px);
-  opacity: 0.5; pointer-events: none;
+  /* мобайл: карта приподнята в середину — большая часть между заголовком и цифрой */
+  position: absolute; z-index: 1; top: 45%; bottom: auto; right: -6%; left: auto;
+  transform: translateY(-50%);
+  width: clamp(250px, 72vw, 360px);
+  opacity: 0.55; pointer-events: none;
   filter: drop-shadow(0 0 20px rgba(254, 197, 12, 0.35)) drop-shadow(0 14px 30px rgba(254, 197, 12, 0.18));
 }
 .hero__map .geo-svg {
@@ -240,6 +241,14 @@ h3 { font-family: var(--font-body); font-weight: 700; font-size: clamp(1.15rem, 
 .hero__scroll { position: absolute; left: 50%; bottom: 26px; transform: translateX(-50%); z-index: 3; width: 26px; height: 42px; border: 2px solid rgba(255,255,255,0.35); border-radius: 14px; display: none; }
 .hero__scroll span { position: absolute; left: 50%; top: 8px; width: 3px; height: 8px; background: #fff; border-radius: 2px; transform: translateX(-50%); animation: scrolldot 1.6s ease-in-out infinite; }
 @keyframes scrolldot { 0%,100% { opacity: 0; transform: translate(-50%, 0); } 50% { opacity: 1; transform: translate(-50%, 8px); } }
+/* мобайл: больше воздуха — заголовок сверху, цифра + кнопка опускаются вниз экрана */
+@media (max-width: 679px) {
+  .hero { align-items: stretch; padding-top: calc(var(--header-h) + 2rem); }
+  .hero__inner { display: flex; flex-direction: column; }
+  /* эту строку дублирует бегущая строка под hero — на мобайле убираем ради воздуха */
+  .hero .eyebrow { display: none; }
+  .hero__stat { margin-top: auto; }
+}
 
 /* ---------- Ticker / marquee ---------- */
 .trust { background: var(--ink); border-top: 1px solid var(--line-dark); border-bottom: 1px solid var(--line-dark); overflow: hidden; }
@@ -397,21 +406,23 @@ h3 { font-family: var(--font-body); font-weight: 700; font-size: clamp(1.15rem, 
 .fab svg { width: 24px; height: 24px; }
 .fab--wa { background: #25d366; color: #fff; }
 .fab--call { background: var(--gold); color: #2a1d00; }
+.fab--ig { background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); color: #fff; }
 
 /* =========================================================
    Responsive
    ========================================================= */
 @media (max-width: 400px) {
-  .brand__mark { font-size: 1.1rem; }
+  .brand__mark { font-size: 1.05rem; }
   .icon-btn { width: 38px; height: 38px; }
   .header__actions { gap: 0.4rem; }
+  .lang-btn { padding: 0.5rem 0.72rem; font-size: 0.82rem; }
 }
 @media (min-width: 680px) {
   .grid--2 { grid-template-columns: 1fr 1fr; }
   .grid--objects { grid-template-columns: 1fr 1fr; }
   .footer__inner { flex-direction: row; justify-content: space-between; align-items: flex-start; gap: 2.5rem; }
   .hero__scroll { display: block; }
-  .hero__map { top: 13%; bottom: auto; right: -2%; width: clamp(380px, 46vw, 620px); opacity: 0.95; }
+  .hero__map { top: 13%; bottom: auto; right: -2%; transform: none; width: clamp(380px, 46vw, 620px); opacity: 0.95; }
 }
 @media (min-width: 940px) {
   .grid--3 { grid-template-columns: repeat(3, 1fr); }
@@ -424,7 +435,7 @@ h3 { font-family: var(--font-body); font-weight: 700; font-size: clamp(1.15rem, 
 @media (min-width: 1180px) {
   .nav { display: flex; }
   .nav-toggle { display: none; }
-  .header__actions .header__call, .header__actions .header__wa { display: inline-flex; }
+  .header__actions .header__call, .header__actions .header__wa, .header__actions .header__ig { display: inline-flex; }
   .header__actions .btn--sm { display: inline-flex; }
 }
 @media (prefers-reduced-motion: reduce) {

@@ -236,7 +236,8 @@
   },
   "floating": {
     "call": "Позвонить",
-    "whatsapp": "WhatsApp"
+    "whatsapp": "WhatsApp",
+    "instagram": "Instagram"
   },
   "footer": {
     "tagline": "Полимерные покрытия для бетонных полов. Сделано в Казахстане.",
