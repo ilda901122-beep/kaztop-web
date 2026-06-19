@@ -215,7 +215,7 @@ h3 { font-family: var(--font-body); font-weight: 700; font-size: clamp(1.15rem, 
   position: absolute; z-index: 1; top: 45%; bottom: auto; right: -6%; left: auto;
   transform: translateY(-50%);
   width: clamp(250px, 72vw, 360px);
-  opacity: 0.55; pointer-events: none;
+  opacity: 0.9; pointer-events: none;
   filter: drop-shadow(0 0 20px rgba(254, 197, 12, 0.35)) drop-shadow(0 14px 30px rgba(254, 197, 12, 0.18));
 }
 .hero__map .geo-svg {
