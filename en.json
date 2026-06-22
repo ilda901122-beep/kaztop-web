@@ -28,7 +28,7 @@
     "developer": {
       "title": "For developers",
       "pain": "Large areas and a tight handover schedule.",
-      "solution": "We pour floors in parkings, entrance lobbies, storage and commercial spaces of residential complexes — on the general contractor's schedule and handed over without defects.",
+      "solution": "We pour floors in parkings, entrance lobbies, storage and commercial spaces of residential complexes — on the general contractor's schedule and handed over without defects. Materials come from our own warehouse, with no supply delays.",
       "cta": "Get a quote"
     },
     "mall": {
@@ -167,8 +167,8 @@
   "about": {
     "title": "Company",
     "lead": "KAZTOP is a Kazakhstani manufacturer of polymer materials for industrial concrete floors. We design the system, produce the materials at our own plant and carry out the installation ourselves — from substrate preparation to handover and care.",
-    "made_in_kz_title": "In-house production",
-    "made_in_kz_desc": "Plant, warehouse and in-house laboratory in Kazakhstan. Popular materials are in stock: shipment without waiting for production and delivery. ST-KZ certificate of origin, incoming and outgoing quality control.",
+    "made_in_kz_title": "Production and warehouse",
+    "made_in_kz_desc": "Plant, warehouse and laboratory in Kazakhstan. Materials are in stock: shipment without waiting for production and delivery. ST-KZ certificate of origin, incoming and outgoing quality control.",
     "experience_title": "Experience on any facility",
     "experience_desc": "Experience on facilities of any complexity — from warehouses and parkings to food and pharmaceutical production.",
     "geo_title": "Full cycle",
