@@ -251,7 +251,9 @@
     "iso": "Quality control per the ISO 9001 standard",
     "cycle": "Full cycle: materials + installation",
     "warranty": "2-year warranty",
-    "stock": "Materials in stock"
+    "stock": "Materials in stock",
+    "delivery": "Delivery across Kazakhstan",
+    "badge": "In stock · delivery across Kazakhstan"
   },
   "systems": {
     "title": "Coating systems by room type",
