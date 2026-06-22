@@ -696,6 +696,7 @@
     "ship_title": "Fast dispatch",
     "ship_desc": "We ship from the warehouse without waiting for supply.",
     "delivery_title": "Delivery across Kazakhstan",
-    "delivery_desc": "We deliver materials nationwide."
+    "delivery_desc": "We deliver materials nationwide.",
+    "now": "now"
   }
 }

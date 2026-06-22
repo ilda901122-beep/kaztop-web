@@ -267,26 +267,31 @@ h3 { font-family: var(--font-body); font-weight: 700; font-size: clamp(1.15rem, 
 }
 
 /* ---------- Toast: наличие · отгрузка · доставка (по очереди справа) ---------- */
-.stock-toasts { position: fixed; top: calc(var(--header-h) + 14px); right: 16px; z-index: 60; width: min(330px, calc(100vw - 32px)); height: 96px; pointer-events: none; }
+.stock-toasts { position: fixed; right: 16px; bottom: calc(16px + 192px + env(safe-area-inset-bottom, 0px)); z-index: 56; width: min(310px, calc(100vw - 84px)); height: 92px; pointer-events: none; }
 .stock-toast {
-  position: absolute; inset: 0 0 auto 0;
-  display: flex; gap: 0.85rem; align-items: flex-start;
-  background: var(--surface); border: 1px solid var(--line); border-left: 3px solid #2bb673;
-  border-radius: 12px; box-shadow: 0 16px 40px rgba(14, 28, 33, 0.18);
-  padding: 0.85rem 1rem;
+  position: absolute; inset: auto 0 0 0;
+  display: flex; gap: 0.8rem; align-items: flex-start;
+  background: var(--surface); border: 1px solid var(--line);
+  border-radius: 14px; box-shadow: 0 16px 40px rgba(14, 28, 33, 0.18);
+  padding: 0.7rem 0.85rem;
   opacity: 0; transform: translateX(118%);
   transition: opacity 0.4s ease, transform 0.5s cubic-bezier(0.2, 0.8, 0.2, 1);
 }
 .stock-toast.is-in { opacity: 1; transform: translateX(0); }
-.stock-toast__icon { width: 38px; height: 38px; border-radius: 10px; background: rgba(0, 175, 202, 0.10); color: var(--kz-deep); display: inline-flex; align-items: center; justify-content: center; flex: none; }
-.stock-toast__icon svg { width: 20px; height: 20px; }
-.stock-toast__body h4 { margin: 0 0 0.15rem; font-size: 0.98rem; }
-.stock-toast__body p { margin: 0; font-size: 0.85rem; color: var(--muted); line-height: 1.4; }
+/* WhatsApp-вид: зелёный аватар + сообщение */
+.stock-toast__avatar { width: 42px; height: 42px; border-radius: 50%; background: #25d366; color: #fff; display: inline-flex; align-items: center; justify-content: center; flex: none; }
+.stock-toast__avatar svg { width: 23px; height: 23px; }
+.stock-toast__body { min-width: 0; }
+.stock-toast__top { display: flex; justify-content: space-between; align-items: baseline; gap: 0.5rem; }
+.stock-toast__name { font-family: var(--font-display); font-weight: 700; font-size: 0.92rem; color: var(--text); }
+.stock-toast__time { font-size: 0.72rem; color: var(--muted); flex: none; }
+.stock-toast__msg { margin: 0.12rem 0 0; font-size: 0.84rem; line-height: 1.35; color: var(--muted); }
+.stock-toast__msg strong { display: block; font-weight: 600; color: var(--text); }
 /* reduced-motion: показываем стопкой статично */
 .stock-toasts.is-static { position: fixed; height: auto; }
 .stock-toasts.is-static .stock-toast { position: static; opacity: 1; transform: none; margin-bottom: 0.6rem; }
-/* мобайл: уводим уведомление ниже заголовка, чтобы не перекрывать H1 */
-@media (max-width: 560px) { .stock-toasts { top: 300px; width: min(300px, calc(100vw - 28px)); } }
+/* мобайл: чуть уже, остаётся над иконками контактов */
+@media (max-width: 560px) { .stock-toasts { width: min(290px, calc(100vw - 84px)); } }
 
 /* ---------- Ticker / marquee ---------- */
 .trust { background: var(--ink); border-top: 1px solid var(--line-dark); border-bottom: 1px solid var(--line-dark); overflow: hidden; }

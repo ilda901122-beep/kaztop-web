@@ -1021,18 +1021,19 @@
     if (!items.length) return;
     var reduce = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
     if (reduce) { box.classList.add("is-static"); return; }
+    var SHOW = 4000, GAP = 600, CYCLE_PAUSE = 35000; // висит / между toast / между циклами
     var i = 0;
     function step() {
-      if (i >= items.length) return;
+      if (i >= items.length) { i = 0; setTimeout(step, CYCLE_PAUSE); return; } // периодически повторяем
       var cur = items[i];
       cur.classList.add("is-in");
       setTimeout(function () {
         cur.classList.remove("is-in");
         i++;
-        setTimeout(step, 450);
-      }, 3500);
+        setTimeout(step, GAP);
+      }, SHOW);
     }
-    setTimeout(step, 1500);
+    setTimeout(step, 2000);
   }
 
   // тот же «налив»-фон в тёмных секциях 04/05 (canvas .section-fx, фолбэк — CSS-градиент)
