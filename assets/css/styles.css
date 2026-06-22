@@ -235,7 +235,7 @@ h3 { font-family: var(--font-body); font-weight: 700; font-size: clamp(1.15rem, 
 .hero__inner { position: relative; z-index: 3; max-width: var(--maxw); }
 .hero__title { color: #fff; margin-bottom: 0.9rem; font-size: clamp(1.9rem, 4.8vw, 3.4rem); max-width: 16ch; }
 .hero__subtitle { font-size: clamp(1.05rem, 2.1vw, 1.3rem); color: var(--on-dark-muted); max-width: 600px; margin: 0 0 1.2rem; }
-.hero__stat { color: #fff; font-family: var(--font-display); font-weight: 700; font-size: clamp(1.25rem, 3vw, 1.95rem); line-height: 1.25; max-width: 640px; }
+.hero__stat { color: #fff; font-family: var(--font-display); font-weight: 700; font-size: clamp(0.8rem, 3.6vw, 1.95rem); line-height: 1.25; max-width: none; white-space: nowrap; }
 .hero__stat::first-line { color: var(--gold); }
 .hero__cta { display: flex; flex-wrap: wrap; gap: 0.8rem; margin-bottom: 0; }
 /* статус-бейдж «в наличии» (hero + блок цен) */
