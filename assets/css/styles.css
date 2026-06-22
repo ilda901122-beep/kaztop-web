@@ -237,12 +237,12 @@ h3 { font-family: var(--font-body); font-weight: 700; font-size: clamp(1.15rem, 
 .hero__subtitle { font-size: clamp(1.05rem, 2.1vw, 1.3rem); color: var(--on-dark-muted); max-width: 600px; margin: 0 0 1.2rem; }
 .hero__stat { color: #fff; font-family: var(--font-display); font-weight: 700; font-size: clamp(1.25rem, 3vw, 1.95rem); line-height: 1.25; max-width: 640px; }
 .hero__stat::first-line { color: var(--gold); }
-.hero__cta { display: flex; flex-wrap: wrap; gap: 0.8rem; margin-bottom: 1.4rem; }
+.hero__cta { display: flex; flex-wrap: wrap; gap: 0.8rem; margin-bottom: 0; }
 /* статус-бейдж «в наличии» (hero + блок цен) */
 .stock-badge { display: inline-flex; align-items: center; gap: 0.55rem; font-weight: 700; font-size: 0.95rem; margin: 0; padding: 0.55rem 1rem; border-radius: 999px; }
 .stock-badge::before { content: ""; width: 10px; height: 10px; border-radius: 50%; background: #2bb673; box-shadow: 0 0 0 3px rgba(43, 182, 115, 0.28); flex: none; animation: stock-pulse 2.2s ease-in-out infinite; }
 @keyframes stock-pulse { 0%,100% { box-shadow: 0 0 0 3px rgba(43,182,115,0.28); } 50% { box-shadow: 0 0 0 6px rgba(43,182,115,0.12); } }
-.hero__badge { margin-top: 1.2rem; color: #fff; background: rgba(4, 20, 26, 0.55); border: 1px solid rgba(255, 255, 255, 0.22); backdrop-filter: blur(4px); }
+.hero__badge { margin-top: 0.85rem; color: #fff; background: rgba(4, 20, 26, 0.55); border: 1px solid rgba(255, 255, 255, 0.22); backdrop-filter: blur(4px); }
 .price-stock { margin: 0.6rem 0 0; color: #137a4f; background: rgba(43, 182, 115, 0.10); border: 1px solid rgba(43, 182, 115, 0.32); }
 @media (prefers-reduced-motion: reduce) { .stock-badge::before { animation: none; } }
 .hero__monaco { display: inline-flex; flex-direction: column; gap: 0.2rem; border-left: 2px solid var(--gold); padding: 0.3rem 0 0.3rem 1.1rem; max-width: 540px; }
