@@ -172,30 +172,6 @@
       </div>
     </div>
 
-    <!-- ============ ЛОГИСТИКА: наличие · отгрузка · доставка ============ -->
-    <section class="section adv" aria-label="Наличие, отгрузка и доставка">
-      <div class="container">
-        <h2 class="adv__title" data-i18n="advantages.title">Со склада — быстро на объект</h2>
-        <div class="adv-grid">
-          <article class="adv-card">
-            <span class="adv-card__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 8l-9-5-9 5 9 5 9-5z"/><path d="M3 8v8l9 5 9-5V8"/><path d="M12 13v8"/></svg></span>
-            <h3 data-i18n="advantages.stock_title">Материалы в наличии</h3>
-            <p data-i18n="advantages.stock_desc">На своём складе — без ожидания производства.</p>
-          </article>
-          <article class="adv-card">
-            <span class="adv-card__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h7l-1 8 10-12h-7l1-8z"/></svg></span>
-            <h3 data-i18n="advantages.ship_title">Быстрая отгрузка</h3>
-            <p data-i18n="advantages.ship_desc">Отгружаем со склада без ожидания поставки.</p>
-          </article>
-          <article class="adv-card">
-            <span class="adv-card__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M1 3h15v13H1z"/><path d="M16 8h4l3 3v5h-7z"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg></span>
-            <h3 data-i18n="advantages.delivery_title">Доставка по Казахстану</h3>
-            <p data-i18n="advantages.delivery_desc">Возим материалы по всей стране.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
     <!-- ============ 1. METHOD + SOLUTIONS (как подбираем + под ваш объект) ============ -->
     <!-- ============ SYSTEMS BY ROOM TYPE ============ -->
     <section class="section section--alt" id="systems">
@@ -439,6 +415,22 @@
   </div>
 
   <!-- ============ FOOTER ============ -->
+  <!-- toast-уведомления: наличие · отгрузка · доставка (по очереди справа) -->
+  <div class="stock-toasts" id="stock-toasts" aria-live="polite" aria-label="Преимущества: наличие, отгрузка, доставка">
+    <div class="stock-toast">
+      <span class="stock-toast__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 8l-9-5-9 5 9 5 9-5z"/><path d="M3 8v8l9 5 9-5V8"/><path d="M12 13v8"/></svg></span>
+      <div class="stock-toast__body"><h4 data-i18n="advantages.stock_title">Материалы в наличии</h4><p data-i18n="advantages.stock_desc">На своём складе — без ожидания производства.</p></div>
+    </div>
+    <div class="stock-toast">
+      <span class="stock-toast__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h7l-1 8 10-12h-7l1-8z"/></svg></span>
+      <div class="stock-toast__body"><h4 data-i18n="advantages.ship_title">Быстрая отгрузка</h4><p data-i18n="advantages.ship_desc">Отгружаем со склада без ожидания поставки.</p></div>
+    </div>
+    <div class="stock-toast">
+      <span class="stock-toast__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M1 3h15v13H1z"/><path d="M16 8h4l3 3v5h-7z"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg></span>
+      <div class="stock-toast__body"><h4 data-i18n="advantages.delivery_title">Доставка по Казахстану</h4><p data-i18n="advantages.delivery_desc">Возим материалы по всей стране.</p></div>
+    </div>
+  </div>
+
   <!-- mobile floating contact bar -->
   <div class="floating-bar" id="floating-bar" aria-label="Быстрый контакт">
     <a class="fab fab--call" href="#contacts" id="floating-call" aria-label="Позвонить" data-i18n-attr="aria-label:floating.call">

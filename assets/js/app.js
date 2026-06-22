@@ -1013,6 +1013,28 @@
     requestAnimationFrame(tick);
   }
 
+  // toast-уведомления (наличие → отгрузка → доставка) — по очереди справа, один проход
+  function initStockToasts() {
+    var box = document.getElementById("stock-toasts");
+    if (!box) return;
+    var items = box.querySelectorAll(".stock-toast");
+    if (!items.length) return;
+    var reduce = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    if (reduce) { box.classList.add("is-static"); return; }
+    var i = 0;
+    function step() {
+      if (i >= items.length) return;
+      var cur = items[i];
+      cur.classList.add("is-in");
+      setTimeout(function () {
+        cur.classList.remove("is-in");
+        i++;
+        setTimeout(step, 450);
+      }, 3500);
+    }
+    setTimeout(step, 1500);
+  }
+
   // тот же «налив»-фон в тёмных секциях 04/05 (canvas .section-fx, фолбэк — CSS-градиент)
   function initSectionFx() {
     [["decor-fx", "decor"], ["objects-fx", "objects"], ["form-fx", "form"], ["sponsors-fx", "sponsors"]].forEach(function (pair) {
@@ -1058,6 +1080,7 @@
     initObjectsScroll();
     initStripAutoScroll(document.getElementById("ral-grid"));
     initStripAutoScroll(document.getElementById("flake-grid"));
+    initStockToasts();
 
     loadDict(currentLang)
       .then(function (d) { dict = d; applyI18n(); setActiveLangButton(); })
