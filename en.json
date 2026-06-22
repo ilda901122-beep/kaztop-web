@@ -687,5 +687,14 @@
   },
   "lightbox": {
     "close": "Close"
+  },
+  "advantages": {
+    "title": "From stock — fast to your site",
+    "stock_title": "Materials in stock",
+    "stock_desc": "In our own warehouse — no waiting for production.",
+    "ship_title": "Fast dispatch",
+    "ship_desc": "We ship from the warehouse without waiting for supply.",
+    "delivery_title": "Delivery across Kazakhstan",
+    "delivery_desc": "We deliver materials nationwide."
   }
 }
