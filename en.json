@@ -168,7 +168,7 @@
     "title": "Company",
     "lead": "KAZTOP is a Kazakhstani manufacturer of polymer materials for industrial concrete floors. We design the system, produce the materials at our own plant and carry out the installation ourselves — from substrate preparation to handover and care.",
     "made_in_kz_title": "In-house production",
-    "made_in_kz_desc": "Plant and in-house laboratory in Kazakhstan. ST-KZ certificate of origin, incoming and outgoing quality control.",
+    "made_in_kz_desc": "Plant, warehouse and in-house laboratory in Kazakhstan. Popular materials are in stock: shipment without waiting for production and delivery. ST-KZ certificate of origin, incoming and outgoing quality control.",
     "experience_title": "Experience on any facility",
     "experience_desc": "Experience on facilities of any complexity — from warehouses and parkings to food and pharmaceutical production.",
     "geo_title": "Full cycle",
@@ -250,7 +250,8 @@
     "lab": "In-house laboratory",
     "iso": "Quality control per the ISO 9001 standard",
     "cycle": "Full cycle: materials + installation",
-    "warranty": "2-year warranty"
+    "warranty": "2-year warranty",
+    "stock": "Materials in stock"
   },
   "systems": {
     "title": "Coating systems by room type",
