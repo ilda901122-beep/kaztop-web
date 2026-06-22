@@ -1,0 +1,688 @@
+{
+  "meta": {
+    "lang_name": "EN",
+    "title": "Kaztop — industrial polymer floors across Kazakhstan",
+    "description": "Kaztop — poured polymer floors for developers, malls and parkings. Made in Kazakhstan. Quote after a site visit."
+  },
+  "nav": {
+    "objects": "Projects",
+    "prices": "Pricing",
+    "about": "Company",
+    "contacts": "Contacts",
+    "cta": "Get a quote",
+    "call": "Call",
+    "systems": "Systems",
+    "how": "Selection",
+    "decor": "Colors",
+    "process": "Process"
+  },
+  "hero": {
+    "title": "Turnkey industrial poured floors — handed over without defects",
+    "subtitle": "2,020,000 m² poured · 250+ projects across Kazakhstan",
+    "cta_primary": "Get a quote",
+    "cta_call": "Call"
+  },
+  "segments": {
+    "title": "Solutions for your facility",
+    "subtitle": "Three typical scenarios — each with its own coating and schedule requirements.",
+    "developer": {
+      "title": "For developers",
+      "pain": "Large areas and a tight handover schedule.",
+      "solution": "We pour floors in parkings, entrance lobbies, storage and commercial spaces of residential complexes — on the general contractor's schedule and handed over without defects.",
+      "cta": "Get a quote"
+    },
+    "mall": {
+      "title": "For malls & retail",
+      "pain": "Heavy footfall, work without closing the mall.",
+      "solution": "Wear-resistant decorative floors; installation in stages and at night — without closing retail zones or losing rent.",
+      "cta": "Get a quote"
+    },
+    "parking": {
+      "title": "For parkings",
+      "pain": "Salt, oil and tyres destroy the concrete slab.",
+      "solution": "Chemical-resistant polyurethane coatings with line marking and anti-slip — protect the slab and simplify cleaning.",
+      "cta": "Get a quote"
+    }
+  },
+  "objects": {
+    "title": "Our projects",
+    "subtitle": "Completed projects across Kazakhstan — from parkings and residential complexes to industrial and sports facilities.",
+    "sample_note": "sample — to be replaced with Kaztop photos",
+    "placeholder": "Real Kaztop projects coming soon.",
+    "card_caption": "Project · City · m²",
+    "projects_label": "Selected projects",
+    "projects": [
+      {
+        "name": "LASK Sports Complex",
+        "city": "Astana"
+      },
+      {
+        "name": "Arman Kala multi-level parking",
+        "city": "Astana"
+      },
+      {
+        "name": "Indoor stadium",
+        "city": "Astana"
+      },
+      {
+        "name": "Pit-Stop, Maykuben West LLP",
+        "city": "Ekibastuz"
+      },
+      {
+        "name": "Nazarbayev University (parkings M1, P1, P2)",
+        "city": "Astana"
+      },
+      {
+        "name": "Tulpar-Talgo plant",
+        "city": "Astana"
+      },
+      {
+        "name": "Garysh National Space Center",
+        "city": "Astana"
+      },
+      {
+        "name": "VIVA Pharm",
+        "city": "Almaty"
+      },
+      {
+        "name": "Korme Exhibition Center",
+        "city": "Astana"
+      },
+      {
+        "name": "Park Avenue residential complex",
+        "city": "Astana"
+      },
+      {
+        "name": "Korkem 4 residential complex",
+        "city": "Astana"
+      },
+      {
+        "name": "Orbis Heavy Machinery",
+        "city": "Astana"
+      },
+      {
+        "name": "Aircraft hangars",
+        "city": "Astana"
+      },
+      {
+        "name": "Nazarbayev Center (parking)",
+        "city": "Astana"
+      }
+    ]
+  },
+  "prices": {
+    "title": "Cost guideline",
+    "subtitle": "Prices are indicative. The exact estimate is calculated by an engineer after a site visit.",
+    "from_label": "from",
+    "unit": "₸/m²",
+    "note": "The cost depends on the substrate condition, area and coating type.",
+    "disclaimer": "Market guideline, not a public offer.",
+    "tier_work": {
+      "title": "Floor installation work",
+      "value": "1,500"
+    },
+    "tier_turnkey": {
+      "title": "Turnkey with materials",
+      "value": "10,000"
+    },
+    "cta": "Get a quote",
+    "rows": [
+      {
+        "sys": "Dustproofing / impregnation",
+        "th": "0.3–0.4 mm",
+        "price": "from 1,500 ₸/m²"
+      },
+      {
+        "sys": "Thin-layer paint (economy)",
+        "th": "0.4–0.6 mm",
+        "price": "from 3,000 ₸/m²"
+      },
+      {
+        "sys": "Topping (concrete hardener)",
+        "th": "—",
+        "price": "from 2,500 ₸/m²"
+      },
+      {
+        "sys": "Self-leveling epoxy (medium)",
+        "th": "1.5–2 mm",
+        "price": "from 6,000 ₸/m²"
+      },
+      {
+        "sys": "Quartz-filled (high)",
+        "th": "3–10 mm",
+        "price": "from 12,000 ₸/m²"
+      },
+      {
+        "sys": "Polyurethane-cement (chemical loads)",
+        "th": "3–10 mm",
+        "price": "from 14,000 ₸/m²"
+      },
+      {
+        "sys": "Antistatic floors",
+        "th": "1.5–2 mm",
+        "price": "from 12,000 ₸/m²"
+      }
+    ]
+  },
+  "about": {
+    "title": "Company",
+    "lead": "KAZTOP is a Kazakhstani manufacturer of polymer materials for industrial concrete floors. We design the system, produce the materials at our own plant and carry out the installation ourselves — from substrate preparation to handover and care.",
+    "made_in_kz_title": "In-house production",
+    "made_in_kz_desc": "Plant and in-house laboratory in Kazakhstan. ST-KZ certificate of origin, incoming and outgoing quality control.",
+    "experience_title": "Experience on any facility",
+    "experience_desc": "Experience on facilities of any complexity — from warehouses and parkings to food and pharmaceutical production.",
+    "geo_title": "Full cycle",
+    "geo_desc": "Materials, design, installation and supervised installation, warranty support — all in one hand.",
+    "certs_btn": "View certificates",
+    "cert_alt": "ST-KZ certificate No. KZ 0 101 00450 — certificate of origin",
+    "cert_alt2": "ST-KZ certificate No. KZ 0 101 00450 — additional sheet",
+    "repair_btn": "View diagrams",
+    "repair_alt": "Repair technology for industrial coatings and concrete substrates",
+    "qc_title": "What we control",
+    "qc_1": "Quality control per the ISO 9001 standard",
+    "qc_2": "Incoming and outgoing raw-material control",
+    "qc_3": "In-house laboratory",
+    "qc_4": "Substrate pull-off strength ≥ 2 MPa",
+    "qc_5": "Residual concrete moisture ≤ 4%",
+    "repair_label": "Repair technology",
+    "repair_1": "Repair of cracks, potholes and joints",
+    "repair_2": "Injection and substrate reinforcement",
+    "repair_3": "Structural nodes and abutments",
+    "repair_4": "Restoration of old concrete floors",
+    "repair_5": "Concrete polishing and line marking",
+    "prod_label": "What we produce",
+    "prod_1": "Epoxy and polyurethane primers",
+    "prod_2": "Self-leveling polymer coatings",
+    "prod_3": "Concrete hardeners (toppings)",
+    "prod_4": "Repair and joint compounds",
+    "prod_5": "Quartz sands, flakes and varnishes"
+  },
+  "form": {
+    "title": "Request a quote",
+    "subtitle": "Fill in the fields — the request opens in WhatsApp with ready-made text.",
+    "name_label": "Name",
+    "name_placeholder": "How should we address you",
+    "phone_label": "Phone",
+    "phone_placeholder": "+7 (___) ___-__-__",
+    "type_label": "Facility type",
+    "type_options": {
+      "mall": "Mall / retail",
+      "parking": "Parking",
+      "industrial": "Production / warehouse",
+      "other": "Other"
+    },
+    "area_label": "Area, m²",
+    "area_placeholder": "e.g. 5000",
+    "submit": "Send via WhatsApp",
+    "disclaimer": "By clicking the button you open WhatsApp to send the request. Exact quote — after a site visit.",
+    "wa_intro": "Hello! A request for a poured-floor quote from the Kaztop website:",
+    "wa_name": "Name",
+    "wa_phone": "Phone",
+    "wa_type": "Facility type",
+    "wa_area": "Area, m²",
+    "validation": "Please fill in name and phone.",
+    "disabled_notice": "Requests will open soon — we are finishing setup. Contacts will appear shortly.",
+    "wa_system": "Interested in system"
+  },
+  "contacts": {
+    "title": "Contacts",
+    "whatsapp_label": "WhatsApp",
+    "whatsapp_value": "Message on WhatsApp",
+    "phone_value": "+7 701 244 8871",
+    "address_value": "Astana, Abylai Khan Avenue 5/3",
+    "hours_value": "Mon–Sun · 9:00–18:00"
+  },
+  "floating": {
+    "call": "Call",
+    "whatsapp": "WhatsApp",
+    "instagram": "Instagram"
+  },
+  "footer": {
+    "tagline": "Polymer coatings for concrete floors. Made in Kazakhstan.",
+    "rights": "Kaztop. All rights reserved.",
+    "instagram": "Instagram",
+    "requisites": "Sole proprietor Toishibekov"
+  },
+  "trust": {
+    "made": "ST-KZ · Made in Kazakhstan",
+    "poured": "In-house production",
+    "geo": "We work across Kazakhstan",
+    "lab": "In-house laboratory",
+    "iso": "Quality control per the ISO 9001 standard",
+    "cycle": "Full cycle: materials + installation",
+    "warranty": "2-year warranty"
+  },
+  "systems": {
+    "title": "Coating systems by room type",
+    "subtitle": "We select the floor build-up for loads, substrate and operating conditions — in economy, medium and high standards.",
+    "adv_label": "Advantages",
+    "items": [
+      {
+        "key": "dry",
+        "title": "Workshops and production",
+        "adv": [
+          "Resistance to temperature swings",
+          "Even surface",
+          "Hygiene",
+          "Good chemical resistance",
+          "High wear resistance"
+        ],
+        "std": [
+          {
+            "name": "Economy",
+            "sys": "Primer KAZTOP 001 + 2–3× KAZTOP 600 (low-solvent epoxy)",
+            "th": "0.4–0.6 mm"
+          },
+          {
+            "name": "Medium",
+            "sys": "Primer KAZTOP 001 + KAZTOP 100 (self-leveling epoxy, solvent-free)",
+            "th": "1.5–2.0 mm"
+          },
+          {
+            "name": "High",
+            "sys": "KAZTOP 001 + KAZTOP 010 binder + colored quartz sand, KAZTOP 010 sealer",
+            "th": "5.0–10.0 mm"
+          }
+        ],
+        "teaser": "Epoxy systems 0.4–10 mm for dry workshops and production"
+      },
+      {
+        "key": "admin",
+        "title": "Administrative and public areas",
+        "adv": [
+          "Coating on vertical surfaces (stairs)",
+          "Repairability",
+          "Complex design elements",
+          "Texture — easy cleaning",
+          "Wide range of color options"
+        ],
+        "std": [
+          {
+            "name": "Economy",
+            "sys": "Industrial carpet: KAZTOP 001 + KAZTOP 600 with chips, KAZTOP 010 impregnation",
+            "th": "0.6–0.8 mm"
+          },
+          {
+            "name": "Medium",
+            "sys": "Colored sand: KAZTOP 001 + KAZTOP 010 + colored quartz sand, KAZTOP 010 impregnation",
+            "th": "2.5–3.0 mm"
+          },
+          {
+            "name": "High",
+            "sys": "Polymer mosaic: KAZTOP 001 + KAZTOP 100 + quartz chips 3–8 mm, KAZTOP 010 impregnation",
+            "th": "3.0–5.0 mm"
+          }
+        ],
+        "teaser": "Decorative wear-resistant floors: flakes, colored quartz, polymer mosaic"
+      },
+      {
+        "key": "auto",
+        "title": "Car services and parkings",
+        "adv": [
+          "Hygiene, does not absorb liquids or dirt",
+          "Application on inclined surfaces",
+          "Adjustable roughness",
+          "Resistance to scratches and impacts"
+        ],
+        "std": [
+          {
+            "name": "Economy",
+            "sys": "KAZTOP 001 + KAZTOP 040 leveling + 2–3× KAZTOP 600",
+            "th": "2.0–3.0 mm"
+          },
+          {
+            "name": "Medium",
+            "sys": "KAZTOP 001 + KAZTOP 010 binder + colored quartz sand, KAZTOP 010 impregnation",
+            "th": "2.0–3.0 mm"
+          },
+          {
+            "name": "High",
+            "sys": "KAZTOP 001 + KAZTOP 600 + calcined quartz chips, KAZTOP 600 sealer",
+            "th": "3.0–4.0 mm"
+          }
+        ],
+        "teaser": "Oil- and impact-resistant floors for car services and parkings"
+      },
+      {
+        "key": "warehouse",
+        "title": "Warehouses and terminals",
+        "adv": [
+          "Resistance to high-rack stackers",
+          "High wear resistance",
+          "Good chemical resistance",
+          "Easy cleaning",
+          "Eco-friendly",
+          "Dust-free"
+        ],
+        "std": [
+          {
+            "name": "Economy",
+            "sys": "Concrete + KAZTOP 5/15 hardener + KAZTOP 010 membrane",
+            "th": "3.0–5.0 mm"
+          },
+          {
+            "name": "Medium",
+            "sys": "KAZTOP 001 + 1–2× KAZTOP 040 + 2–3× KAZTOP 600",
+            "th": "3.0–5.0 mm"
+          },
+          {
+            "name": "High",
+            "sys": "KAZTOP 001 + KAZTOP 600 (fire-safe self-leveling)",
+            "th": "1.5–2.5 mm"
+          }
+        ],
+        "teaser": "Dust-free floors for stackers and intensive traffic"
+      },
+      {
+        "key": "chemical",
+        "title": "Food and chemical production",
+        "adv": [
+          "Seamless hygienic surface",
+          "Resistance to acids, alkalis and fats",
+          "Resistance to hot-water and steam washing",
+          "Moisture and stain resistance",
+          "Compliance with food-production requirements"
+        ],
+        "std": [
+          {
+            "name": "Economy",
+            "sys": "KAZTOP 001 + KAZTOP 010 binder + colored quartz sand, KAZTOP 010 impregnation",
+            "th": "2.0–3.0 mm"
+          },
+          {
+            "name": "Medium",
+            "sys": "Primer + KAZTOP 100 polymer concrete (polyurethane-cement self-leveling)",
+            "th": "3.0–6.0 mm"
+          },
+          {
+            "name": "High",
+            "sys": "KAZTOP 001 + KAZTOP 100 polymer concrete (high-filled)",
+            "th": "5.0–10.0 mm"
+          }
+        ],
+        "teaser": "Chemical-resistant polymer-concrete systems 2–10 mm"
+      },
+      {
+        "key": "antistatic",
+        "title": "Antistatic areas",
+        "adv": [
+          "Surface resistance 10⁴–10⁶ Ohm",
+          "Spark safety",
+          "Bridging of substrate cracks",
+          "High strength",
+          "Even smooth surface",
+          "Fire safety (G1, RP1)"
+        ],
+        "std": [
+          {
+            "name": "Medium",
+            "sys": "KAZTOP 001 + copper grounding tapes and anchors + conductive layer + antistatic polyurethane self-leveling layer",
+            "th": "1.5–2.0 mm"
+          },
+          {
+            "name": "High",
+            "sys": "KAZTOP 001 + copper grounding tapes and anchors + conductive layer + antistatic epoxy self-leveling layer",
+            "th": "1.5–2.0 mm"
+          }
+        ],
+        "teaser": "Antistatic spark-safe floors for production"
+      }
+    ],
+    "cta_calc": "Calculate this floor",
+    "more": "View catalog",
+    "less": "Collapse",
+    "spec_more": "Details"
+  },
+  "sponsors": {
+    "title": "We support sport",
+    "subtitle": "KAZTOP — sponsor of Kazakhstan's sports teams and tournaments.",
+    "items": [
+      "Qazaqstan Tennis Team",
+      "Kazakhstan Tennis Federation",
+      "AMIR CUP",
+      "PARASAT WINTER CUP",
+      "Gazaq Athletics",
+      "TASSAY",
+      "FIT BABY",
+      "TEDDER"
+    ]
+  },
+  "selection": {
+    "title": "Coating selection for your facility",
+    "subtitle": "The floor build-up is determined by operating conditions and substrate state. We zone the area by type and intensity of impact — and propose a system for each zone.",
+    "groups": [
+      {
+        "title": "Mechanical impacts",
+        "items": [
+          "Static and dynamic loads",
+          "Pedestrian, wheeled, vibration",
+          "Impact loads",
+          "Concentration and frequency"
+        ]
+      },
+      {
+        "title": "Chemical impacts",
+        "items": [
+          "Acids, alkalis, solvents",
+          "Oils and salt solutions",
+          "Concentration and volume",
+          "Frequency and intensity"
+        ]
+      },
+      {
+        "title": "Thermal impacts",
+        "items": [
+          "Heating during use and washing",
+          "Solar radiation",
+          "Cooling and freezing",
+          "Temperature swings"
+        ]
+      },
+      {
+        "title": "Special requirements",
+        "items": [
+          "Surface flatness and texture",
+          "Slip resistance",
+          "Flammability and cleanliness class",
+          "Decontaminability, skirtings, decor"
+        ]
+      }
+    ],
+    "base_title": "Substrate condition and work conditions",
+    "base_items": [
+      "Substrate type, strength and flatness",
+      "Cracks, defects, adhesion",
+      "Moisture and temperature",
+      "Deadlines and environmental limits"
+    ],
+    "base_desc": [
+      "We assess the concrete class and pull-off strength with an adhesion tester (requirement — at least 2 MPa), checking flatness and the actual screed thickness.",
+      "We inspect the substrate for voids and delamination, record cracks and defects, evaluate inter-layer adhesion and determine the scope of repair (routing, injection).",
+      "We monitor the residual concrete moisture (norm — up to 4%) and the substrate temperature before application.",
+      "We check substrate readiness and agree the work schedule, ventilation and application temperature regime."
+    ],
+    "base_cta": "How we check this",
+    "base_cta_less": "Collapse"
+  },
+  "process": {
+    "title": "How we work",
+    "subtitle": "From request to project handover — a full cycle and technical support.",
+    "steps": [
+      {
+        "num": "01",
+        "title": "Request and consultation",
+        "desc": "Information and technical support: we select the coating type for the task, loads and budget."
+      },
+      {
+        "num": "02",
+        "title": "Site visit and substrate assessment",
+        "desc": "On-site measurement, diagnostics of strength, moisture and defects, preparation recommendations."
+      },
+      {
+        "num": "03",
+        "title": "Design and trial application",
+        "desc": "System composition, thickness and color; if needed — a trial area right on site."
+      },
+      {
+        "num": "04",
+        "title": "Installation and supervised installation",
+        "desc": "Installation by our crew or technical supervision of your contractors, tool selection."
+      },
+      {
+        "num": "05",
+        "title": "Post-warranty service",
+        "desc": "Project acceptance, operation and care recommendations, warranty and post-warranty support."
+      }
+    ]
+  },
+  "palette": {
+    "title": "Color and texture",
+    "subtitle": "Standard RAL colors and decorative flakes. Other colors and compositions — on request.",
+    "ral_label": "Standard RAL colors",
+    "flakes_label": "Flakes — standard compositions",
+    "disclaimer": "On-screen colors are a guide. The exact tone is matched against the RAL reference scale and samples.",
+    "cta": "Pick a color",
+    "colors": [
+      {
+        "ral": "RAL 7032",
+        "hex": "#BCBBA8",
+        "name": "Pebble grey"
+      },
+      {
+        "ral": "RAL 1015",
+        "hex": "#E6D2B1",
+        "name": "Light ivory"
+      },
+      {
+        "ral": "RAL 3012",
+        "hex": "#C6906F",
+        "name": "Beige red"
+      },
+      {
+        "ral": "RAL 7040",
+        "hex": "#9DA3A6",
+        "name": "Window grey"
+      },
+      {
+        "ral": "RAL 1001",
+        "hex": "#D0B084",
+        "name": "Beige"
+      },
+      {
+        "ral": "RAL 8002",
+        "hex": "#7C4B38",
+        "name": "Signal brown"
+      },
+      {
+        "ral": "RAL 7030",
+        "hex": "#8F8B7A",
+        "name": "Stone grey"
+      },
+      {
+        "ral": "RAL 6021",
+        "hex": "#89A275",
+        "name": "Pale green"
+      },
+      {
+        "ral": "RAL 9011",
+        "hex": "#1B1B1B",
+        "name": "Graphite black"
+      },
+      {
+        "ral": "RAL 7023",
+        "hex": "#828079",
+        "name": "Concrete grey"
+      },
+      {
+        "ral": "RAL 6011",
+        "hex": "#5E7148",
+        "name": "Reseda green"
+      },
+      {
+        "ral": "RAL 5024",
+        "hex": "#6B93AE",
+        "name": "Pastel blue"
+      },
+      {
+        "ral": "RAL 7037",
+        "hex": "#7D7F7D",
+        "name": "Dusty grey"
+      },
+      {
+        "ral": "RAL 6000",
+        "hex": "#33775F",
+        "name": "Patina green"
+      },
+      {
+        "ral": "RAL 5014",
+        "hex": "#647B95",
+        "name": "Pigeon blue"
+      }
+    ],
+    "flakes": [
+      {
+        "id": "019",
+        "src": "assets/img/flakes/flake01.webp"
+      },
+      {
+        "id": "010",
+        "src": "assets/img/flakes/flake02.webp"
+      },
+      {
+        "id": "007",
+        "src": "assets/img/flakes/flake03.webp"
+      },
+      {
+        "id": "008",
+        "src": "assets/img/flakes/flake04.webp"
+      },
+      {
+        "id": "001",
+        "src": "assets/img/flakes/flake05.webp"
+      },
+      {
+        "id": "017",
+        "src": "assets/img/flakes/flake06.webp"
+      },
+      {
+        "id": "004",
+        "src": "assets/img/flakes/flake07.webp"
+      },
+      {
+        "id": "011",
+        "src": "assets/img/flakes/flake08.webp"
+      },
+      {
+        "id": "014",
+        "src": "assets/img/flakes/flake09.webp"
+      },
+      {
+        "id": "009",
+        "src": "assets/img/flakes/flake10.webp"
+      },
+      {
+        "id": "005",
+        "src": "assets/img/flakes/flake11.webp"
+      },
+      {
+        "id": "015",
+        "src": "assets/img/flakes/flake12.webp"
+      },
+      {
+        "id": "003",
+        "src": "assets/img/flakes/flake13.webp"
+      },
+      {
+        "id": "012.2",
+        "src": "assets/img/flakes/flake14.webp"
+      },
+      {
+        "id": "013",
+        "src": "assets/img/flakes/flake15.webp"
+      }
+    ]
+  },
+  "lightbox": {
+    "close": "Close"
+  }
+}

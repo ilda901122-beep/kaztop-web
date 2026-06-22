@@ -2,126 +2,151 @@
   {
     "src": "assets/img/objects/work_expo.webp",
     "caption_ru": "EXPO 2017 · Астана",
-    "caption_kk": "EXPO 2017 · Астана"
+    "caption_kk": "EXPO 2017 · Астана",
+    "caption_en": "EXPO 2017 · Astana"
   },
   {
     "src": "assets/img/objects/obj03.webp",
     "caption_ru": "Крытый стадион · Астана",
-    "caption_kk": "Жабық стадион · Астана"
+    "caption_kk": "Жабық стадион · Астана",
+    "caption_en": "Indoor stadium · Astana"
   },
   {
     "src": "assets/img/objects/obj10.webp",
     "caption_ru": "Завод «Тулпар-Talgo» · Астана",
-    "caption_kk": "Завод «Тулпар-Talgo» · Астана"
+    "caption_kk": "Завод «Тулпар-Talgo» · Астана",
+    "caption_en": "Tulpar-Talgo plant · Astana"
   },
   {
     "src": "assets/img/objects/obj01.webp",
     "caption_ru": "Спорткомплекс «ЛАСК» · Астана",
-    "caption_kk": "«ЛАСК» спорт кешені · Астана"
+    "caption_kk": "«ЛАСК» спорт кешені · Астана",
+    "caption_en": "LASK Sports Complex · Astana"
   },
   {
     "src": "assets/img/objects/obj13.webp",
     "caption_ru": "Нац. космический центр «Гарыш» · Астана",
-    "caption_kk": "«Ғарыш» ұлттық ғарыш орталығы · Астана"
+    "caption_kk": "«Ғарыш» ұлттық ғарыш орталығы · Астана",
+    "caption_en": "Garysh National Space Center · Astana"
   },
   {
     "src": "assets/img/objects/obj16.webp",
     "caption_ru": "Orbis Heavy Machinery · Астана",
-    "caption_kk": "Orbis Heavy Machinery · Астана"
+    "caption_kk": "Orbis Heavy Machinery · Астана",
+    "caption_en": "Orbis Heavy Machinery · Astana"
   },
   {
     "src": "assets/img/objects/work05.webp",
     "caption_ru": "Производственная линия — упрочнённый бетон",
-    "caption_kk": "Өндірістік желі — нығайтылған бетон"
+    "caption_kk": "Өндірістік желі — нығайтылған бетон",
+    "caption_en": "Production line — hardened concrete"
   },
   {
     "src": "assets/img/objects/work03.webp",
     "caption_ru": "Производственный цех — полиуретановый пол",
-    "caption_kk": "Өндірістік цех — полиуретанды еден"
+    "caption_kk": "Өндірістік цех — полиуретанды еден",
+    "caption_en": "Production workshop — polyurethane floor"
   },
   {
     "src": "assets/img/objects/work02.webp",
     "caption_ru": "Складской комплекс — флоковое покрытие",
-    "caption_kk": "Қойма кешені — флокты жабын"
+    "caption_kk": "Қойма кешені — флокты жабын",
+    "caption_en": "Warehouse complex — flake coating"
   },
   {
     "src": "assets/img/objects/work01.webp",
     "caption_ru": "Автосалон — наливной пол",
-    "caption_kk": "Автосалон — құйма еден"
+    "caption_kk": "Автосалон — құйма еден",
+    "caption_en": "Car showroom — poured floor"
   },
   {
     "src": "assets/img/objects/obj06.webp",
     "caption_ru": "Производственный цех",
-    "caption_kk": "Өндірістік цех"
+    "caption_kk": "Өндірістік цех",
+    "caption_en": "Production workshop"
   },
   {
     "src": "assets/img/objects/obj11.webp",
     "caption_ru": "Производственный цех",
-    "caption_kk": "Өндірістік цех"
+    "caption_kk": "Өндірістік цех",
+    "caption_en": "Production workshop"
   },
   {
     "src": "assets/img/objects/obj09.webp",
     "caption_ru": "Складское помещение",
-    "caption_kk": "Қойма үй-жайы"
+    "caption_kk": "Қойма үй-жайы",
+    "caption_en": "Warehouse space"
   },
   {
     "src": "assets/img/objects/obj15.webp",
     "caption_ru": "Складское помещение",
-    "caption_kk": "Қойма үй-жайы"
+    "caption_kk": "Қойма үй-жайы",
+    "caption_en": "Warehouse space"
   },
   {
     "src": "assets/img/objects/work06.webp",
     "caption_ru": "Автосервис — наливной пол",
-    "caption_kk": "Автосервис — құйма еден"
+    "caption_kk": "Автосервис — құйма еден",
+    "caption_en": "Car service — poured floor"
   },
   {
     "src": "assets/img/objects/work07.webp",
     "caption_ru": "Складское помещение — флоковый эпоксид",
-    "caption_kk": "Қойма үй-жайы — флокты эпоксид"
+    "caption_kk": "Қойма үй-жайы — флокты эпоксид",
+    "caption_en": "Warehouse space — flake epoxy"
   },
   {
     "src": "assets/img/objects/obj02.webp",
     "caption_ru": "Многоуровневый паркинг · Астана",
-    "caption_kk": "Көп деңгейлі паркинг · Астана"
+    "caption_kk": "Көп деңгейлі паркинг · Астана",
+    "caption_en": "Multi-level parking · Astana"
   },
   {
     "src": "assets/img/objects/obj04.webp",
     "caption_ru": "Паркинг — наливной пол",
-    "caption_kk": "Паркинг — құйма еден"
+    "caption_kk": "Паркинг — құйма еден",
+    "caption_en": "Parking — poured floor"
   },
   {
     "src": "assets/img/objects/obj08.webp",
     "caption_ru": "Паркинг",
-    "caption_kk": "Паркинг"
+    "caption_kk": "Паркинг",
+    "caption_en": "Parking"
   },
   {
     "src": "assets/img/objects/obj12.webp",
     "caption_ru": "Паркинг",
-    "caption_kk": "Паркинг"
+    "caption_kk": "Паркинг",
+    "caption_en": "Parking"
   },
   {
     "src": "assets/img/objects/obj14.webp",
     "caption_ru": "Паркинг",
-    "caption_kk": "Паркинг"
+    "caption_kk": "Паркинг",
+    "caption_en": "Parking"
   },
   {
     "src": "assets/img/objects/obj20.webp",
     "caption_ru": "Полированный пол паркинга",
-    "caption_kk": "Паркингтің жылтыратылған едені"
+    "caption_kk": "Паркингтің жылтыратылған едені",
+    "caption_en": "Polished parking floor"
   },
   {
     "src": "assets/img/objects/obj05.webp",
     "caption_ru": "Спортивный комплекс · Астана",
-    "caption_kk": "Спорт кешені · Астана"
+    "caption_kk": "Спорт кешені · Астана",
+    "caption_en": "Sports complex · Astana"
   },
   {
     "src": "assets/img/objects/obj07.webp",
     "caption_ru": "Производственное помещение",
-    "caption_kk": "Өндірістік үй-жай"
+    "caption_kk": "Өндірістік үй-жай",
+    "caption_en": "Production space"
   },
   {
     "src": "assets/img/objects/work04.webp",
     "caption_ru": "Лестница — декоративное покрытие",
-    "caption_kk": "Баспалдақ — декоративті жабын"
+    "caption_kk": "Баспалдақ — декоративті жабын",
+    "caption_en": "Staircase — decorative coating"
   }
 ]

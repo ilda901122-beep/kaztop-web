@@ -16,7 +16,7 @@
   // Пусто → кнопки «Позвонить» ведут к секции контактов (#contacts).
   var PHONE_NUMBER = "+77012448871";
 
-  var SUPPORTED = ["kk", "ru"];
+  var SUPPORTED = ["kk", "ru", "en"];
   var DEFAULT_LANG = "ru";
   var STORAGE_KEY = "kaztop_lang";
 
@@ -58,6 +58,7 @@
     if (saved && SUPPORTED.indexOf(saved) !== -1) return saved;
     var nav = (navigator.language || "").slice(0, 2).toLowerCase();
     if (nav === "kk") return "kk";
+    if (nav === "en") return "en";
     return DEFAULT_LANG;
   }
 
