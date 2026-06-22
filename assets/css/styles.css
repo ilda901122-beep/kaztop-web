@@ -244,7 +244,7 @@ h3 { font-family: var(--font-body); font-weight: 700; font-size: clamp(1.15rem, 
 @keyframes stock-pulse { 0%,100% { box-shadow: 0 0 0 3px rgba(43,182,115,0.28); } 50% { box-shadow: 0 0 0 6px rgba(43,182,115,0.12); } }
 .price-stock { margin: 0.6rem 0 0; color: #137a4f; background: rgba(43, 182, 115, 0.10); border: 1px solid rgba(43, 182, 115, 0.32); }
 /* наличие/отгрузка/доставка в hero — столбиком, по центру */
-.hero__avail { display: flex; flex-direction: column; align-items: center; gap: 0.55rem; margin: 0.9rem auto 1.3rem; text-align: center; color: #d9edf0; font-weight: 600; font-size: clamp(0.96rem, 1.6vw, 1.1rem); }
+.hero__avail { display: flex; flex-direction: column; align-items: flex-start; gap: 0.55rem; margin: 0.9rem 0 1.3rem; text-align: left; color: #d9edf0; font-weight: 600; font-size: clamp(0.96rem, 1.6vw, 1.1rem); }
 .hero__avail span { display: inline-flex; align-items: center; gap: 0.5rem; text-shadow: 0 1px 8px rgba(0, 0, 0, 0.45); }
 .hero__avail span::before { content: ""; width: 9px; height: 9px; border-radius: 50%; background: #2bb673; box-shadow: 0 0 0 3px rgba(43, 182, 115, 0.28); flex: none; animation: stock-pulse 2.2s ease-in-out infinite; }
 @media (prefers-reduced-motion: reduce) { .hero__avail span::before { animation: none; } }
