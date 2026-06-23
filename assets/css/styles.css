@@ -267,7 +267,7 @@ h3 { font-family: var(--font-body); font-weight: 700; font-size: clamp(1.15rem, 
 }
 
 /* ---------- Toast: наличие · отгрузка · доставка (по очереди справа) ---------- */
-.stock-toasts { position: fixed; right: 16px; bottom: calc(16px + 182px + env(safe-area-inset-bottom, 0px)); z-index: 56; width: min(218px, calc(100vw - 120px)); height: 72px; pointer-events: none; }
+.stock-toasts { position: fixed; right: 20px; bottom: calc(16px + 182px + env(safe-area-inset-bottom, 0px)); z-index: 56; width: min(216px, calc(100vw - 130px)); height: 72px; pointer-events: none; }
 .stock-toast {
   position: absolute; inset: auto 0 0 0;
   display: flex; gap: 0.5rem; align-items: center;
@@ -276,8 +276,8 @@ h3 { font-family: var(--font-body); font-weight: 700; font-size: clamp(1.15rem, 
   padding: 0.45rem 0.6rem;
   /* «выскакивает» из угла к иконкам контактов (снизу справа) */
   transform-origin: bottom right;
-  opacity: 0; transform: scale(0.4) translate(8px, 12px);
-  transition: opacity 0.35s ease, transform 0.45s cubic-bezier(0.18, 0.9, 0.32, 1.25);
+  opacity: 0; transform: scale(0.5) translateY(10px);
+  transition: opacity 0.35s ease, transform 0.42s cubic-bezier(0.2, 0.8, 0.3, 1.1);
 }
 .stock-toast.is-in { opacity: 1; transform: scale(1) translate(0, 0); }
 /* хвостик-указатель вниз — на иконку WhatsApp/контактов */
