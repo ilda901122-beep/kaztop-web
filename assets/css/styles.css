@@ -482,7 +482,6 @@ h3 { font-family: var(--font-body); font-weight: 700; font-size: clamp(1.15rem, 
 @media (min-width: 1180px) {
   .nav { display: flex; }
   .nav-toggle { display: none; }
-  .header__actions .header__call, .header__actions .header__wa, .header__actions .header__ig { display: inline-flex; }
   .header__actions .btn--sm { display: inline-flex; }
 }
 @media (prefers-reduced-motion: reduce) {
