@@ -267,13 +267,13 @@ h3 { font-family: var(--font-body); font-weight: 700; font-size: clamp(1.15rem, 
 }
 
 /* ---------- Toast: наличие · отгрузка · доставка (по очереди справа) ---------- */
-.stock-toasts { position: fixed; right: 16px; bottom: calc(16px + 182px + env(safe-area-inset-bottom, 0px)); z-index: 56; width: min(244px, calc(100vw - 110px)); height: 80px; pointer-events: none; }
+.stock-toasts { position: fixed; right: 16px; bottom: calc(16px + 182px + env(safe-area-inset-bottom, 0px)); z-index: 56; width: min(218px, calc(100vw - 120px)); height: 72px; pointer-events: none; }
 .stock-toast {
   position: absolute; inset: auto 0 0 0;
-  display: flex; gap: 0.6rem; align-items: center;
+  display: flex; gap: 0.5rem; align-items: center;
   background: var(--surface); border: 1px solid var(--line);
-  border-radius: 13px; box-shadow: 0 14px 34px rgba(14, 28, 33, 0.16);
-  padding: 0.55rem 0.7rem;
+  border-radius: 12px; box-shadow: 0 12px 30px rgba(14, 28, 33, 0.15);
+  padding: 0.45rem 0.6rem;
   /* «выскакивает» из угла к иконкам контактов (снизу справа) */
   transform-origin: bottom right;
   opacity: 0; transform: scale(0.4) translate(8px, 12px);
@@ -284,13 +284,13 @@ h3 { font-family: var(--font-body); font-weight: 700; font-size: clamp(1.15rem, 
 .stock-toast::after { content: ""; position: absolute; right: 20px; bottom: -6px; width: 13px; height: 13px; background: var(--surface); border-right: 1px solid var(--line); border-bottom: 1px solid var(--line); transform: rotate(45deg); border-bottom-right-radius: 3px; }
 .stock-toasts.is-static .stock-toast::after { display: none; }
 /* аватар-логотип Kaztop */
-.stock-toast__avatar { width: 34px; height: 34px; border-radius: 50%; background: rgba(0, 175, 202, 0.12); color: var(--kz-deep); display: inline-flex; align-items: center; justify-content: center; flex: none; }
-.stock-toast__avatar svg { width: 20px; height: 20px; }
+.stock-toast__avatar { width: 30px; height: 30px; border-radius: 50%; background: rgba(0, 175, 202, 0.12); color: var(--kz-deep); display: inline-flex; align-items: center; justify-content: center; flex: none; }
+.stock-toast__avatar svg { width: 18px; height: 18px; }
 .stock-toast__body { min-width: 0; }
-.stock-toast__top { display: flex; justify-content: space-between; align-items: baseline; gap: 0.4rem; }
-.stock-toast__name { font-family: var(--font-display); font-weight: 700; font-size: 0.82rem; color: var(--text); }
-.stock-toast__time { font-size: 0.66rem; color: var(--muted); flex: none; }
-.stock-toast__msg { margin: 0.1rem 0 0; font-size: 0.76rem; line-height: 1.3; color: var(--muted); }
+.stock-toast__top { display: flex; justify-content: space-between; align-items: baseline; gap: 0.35rem; }
+.stock-toast__name { font-family: var(--font-display); font-weight: 700; font-size: 0.76rem; color: var(--text); }
+.stock-toast__time { font-size: 0.6rem; color: var(--muted); flex: none; }
+.stock-toast__msg { margin: 0.08rem 0 0; font-size: 0.7rem; line-height: 1.28; color: var(--muted); }
 .stock-toast__msg strong { display: block; font-weight: 600; color: var(--text); }
 /* reduced-motion: показываем стопкой статично */
 .stock-toasts.is-static { position: fixed; height: auto; }
