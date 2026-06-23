@@ -1021,7 +1021,7 @@
     if (!items.length) return;
     var reduce = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
     if (reduce) { box.classList.add("is-static"); return; }
-    var SHOW = 4500, GAP = 34000; // висит на экране / пауза между сообщениями
+    var SHOW = 6500, GAP = 34000; // висит на экране / пауза между сообщениями
     var i = 0;
     function step() {
       var cur = items[i % items.length];
