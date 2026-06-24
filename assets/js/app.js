@@ -17,6 +17,8 @@
   var PHONE_NUMBER = "+77012448871";
 
   var SUPPORTED = ["kk", "ru", "en"];
+  // Аналитика: вставить реальный ID от заказчика. Пусто → счётчик НЕ грузится.
+  var GA_ID = "";   // Google Analytics 4 — Measurement ID (G-XXXXXXX)
   var DEFAULT_LANG = "ru";
   var STORAGE_KEY = "kaztop_lang";
 
@@ -100,6 +102,7 @@
     buildPrices();
     buildSponsors();
     updateContacts();
+    buildCalc();
   }
 
   // ---- Prices (рыночный ориентир, из dict.prices.rows) -----------------
@@ -1035,6 +1038,172 @@
     setTimeout(step, 2500);
   }
 
+  // ===== Калькулятор стоимости (страница calc.html) =====================
+  // ЗАГЛУШКА ставок (₸/м²: материал/работа) — заменить на данные заказчика.
+  // Индексы массивов соответствуют systems.items[key].std (порядок классов).
+  var CALC_RATES = {
+    dry:        [{ m: 2000, w: 1000 }, { m: 4200, w: 1800 }, { m: 8500, w: 3500 }],
+    admin:      [{ m: 2700, w: 1300 }, { m: 4900, w: 2100 }, { m: 7000, w: 3000 }],
+    auto:       [{ m: 2400, w: 1100 }, { m: 4200, w: 1800 }, { m: 6300, w: 2700 }],
+    warehouse:  [{ m: 1700, w: 800 }, { m: 3500, w: 1500 }, { m: 4900, w: 2100 }],
+    chemical:   [{ m: 4200, w: 1800 }, { m: 7000, w: 3000 }, { m: 11000, w: 5000 }],
+    antistatic: [{ m: 8400, w: 3600 }, { m: 11000, w: 5000 }]
+  };
+  var CALC_PREP = { "new": 0, defects: 1100, old: 2200 };
+  var CALC_OPTS = { marking: 450, plinth: 1500, antislip: 400 };
+  var calcTier = 0;
+
+  function calcFmt(n) {
+    var sep = currentLang === "en" ? "," : " ";
+    return Math.round(n).toString().replace(/\B(?=(\d{3})+(?!\d))/g, sep);
+  }
+  function calcItems() { return getByPath(dict, "systems.items") || []; }
+  function calcCurItem() {
+    var sel = document.getElementById("calc-type");
+    if (!sel) return calcItems()[0] || null;
+    var key = sel.value, found = null;
+    calcItems().forEach(function (it) { if (it.key === key) found = it; });
+    return found || calcItems()[0] || null;
+  }
+
+  function calcRender() {
+    var root = document.getElementById("calc");
+    if (!root) return;
+    var it = calcCurItem(); if (!it) return;
+    var std = (it.std || [])[calcTier]; if (!std) return;
+    var rate = (CALC_RATES[it.key] || [])[calcTier] || { m: 0, w: 0 };
+    var areaEl = document.getElementById("calc-area");
+    var area = Math.max(0, parseFloat(areaEl && areaEl.value) || 0);
+    var baseEl = document.getElementById("calc-base");
+    var prep = CALC_PREP[(baseEl && baseEl.value)] || 0;
+    var opt = 0;
+    root.querySelectorAll(".calc-opt:checked").forEach(function (c) { opt += CALC_OPTS[c.value] || 0; });
+    var unit = getByPath(dict, "calc.unit") || "₸/м²";
+    var dash = getByPath(dict, "calc.dash") || "—";
+    function set(id, v) { var e = document.getElementById(id); if (e) e.textContent = v; }
+    set("calc-res-system", std.sys);
+    set("calc-res-th", std.th);
+    set("calc-mat", calcFmt(rate.m) + " " + unit);
+    set("calc-work", calcFmt(rate.w) + " " + unit);
+    set("calc-prep", calcFmt(prep) + " " + unit);
+    set("calc-opt-val", calcFmt(opt) + " " + unit);
+    var perM2 = rate.m + rate.w + prep + opt;
+    set("calc-permeter", calcFmt(perM2) + " " + unit);
+    var fromL = getByPath(dict, "calc.from") || "от";
+    var toL = getByPath(dict, "calc.to") || "до";
+    if (area > 0) {
+      var total = perM2 * area;
+      var lo = Math.round(total * 0.9 / 1000) * 1000;
+      var hi = Math.round(total * 1.12 / 1000) * 1000;
+      set("calc-total", fromL + " " + calcFmt(lo) + " " + toL + " " + calcFmt(hi) + " ₸");
+      var d1 = Math.ceil(area / 600) + 1, d2 = Math.ceil(area / 300) + 3;
+      set("calc-term", "~ " + d1 + "–" + d2 + " " + (getByPath(dict, "calc.term_days") || "дней"));
+    } else {
+      set("calc-total", dash);
+      set("calc-term", dash);
+    }
+  }
+
+  function buildCalc() {
+    var sel = document.getElementById("calc-type");
+    if (!sel) return;
+    var prevKey = sel.value;
+    sel.innerHTML = "";
+    calcItems().forEach(function (it) {
+      var o = document.createElement("option");
+      o.value = it.key; o.textContent = it.title;
+      sel.appendChild(o);
+    });
+    if (prevKey) sel.value = prevKey;
+    var it = calcCurItem();
+    var wrap = document.getElementById("calc-class");
+    if (wrap && it) {
+      if (calcTier >= (it.std || []).length) calcTier = 0;
+      wrap.innerHTML = "";
+      (it.std || []).forEach(function (s, i) {
+        var b = document.createElement("button");
+        b.type = "button";
+        b.className = "calc-class-btn" + (i === calcTier ? " is-active" : "");
+        b.textContent = s.name;
+        b.setAttribute("data-idx", i);
+        wrap.appendChild(b);
+      });
+    }
+    calcRender();
+  }
+
+  function calcWAOpen() {
+    var it = calcCurItem(); if (!it) return;
+    var std = (it.std || [])[calcTier]; if (!std) return;
+    var L = function (p, f) { return getByPath(dict, p) || f; };
+    var areaEl = document.getElementById("calc-area");
+    var area = Math.max(0, parseFloat(areaEl && areaEl.value) || 0);
+    var baseEl = document.getElementById("calc-base");
+    var baseTxt = baseEl ? baseEl.options[baseEl.selectedIndex].textContent : "";
+    var opts = [], optSum = 0;
+    document.querySelectorAll(".calc-opt:checked").forEach(function (c) {
+      var lb = c.closest("label"); if (lb) opts.push(lb.textContent.trim());
+      optSum += CALC_OPTS[c.value] || 0;
+    });
+    var rate = (CALC_RATES[it.key] || [])[calcTier] || { m: 0, w: 0 };
+    var prep = CALC_PREP[(baseEl && baseEl.value)] || 0;
+    var perM2 = rate.m + rate.w + prep + optSum;
+    var totalStr = L("calc.dash", "—");
+    if (area > 0) {
+      var lo = Math.round(perM2 * area * 0.9 / 1000) * 1000;
+      var hi = Math.round(perM2 * area * 1.12 / 1000) * 1000;
+      totalStr = L("calc.from", "от") + " " + calcFmt(lo) + " " + L("calc.to", "до") + " " + calcFmt(hi) + " ₸";
+    }
+    var lines = [
+      L("calc.wa_intro", "Kaztop:"),
+      L("calc.wa_type", "Тип") + ": " + it.title,
+      L("calc.wa_class", "Класс") + ": " + std.name,
+      L("calc.wa_area", "Площадь, м²") + ": " + (area || "—"),
+      L("calc.wa_base", "Основание") + ": " + baseTxt,
+      L("calc.wa_system", "Система") + ": " + std.sys,
+      L("calc.wa_thickness", "Толщина") + ": " + std.th
+    ];
+    if (opts.length) lines.push(L("calc.wa_options", "Опции") + ": " + opts.join(", "));
+    lines.push(L("calc.wa_total", "Под ключ") + ": " + totalStr);
+    window.open(waLink(lines.join("\n")), "_blank", "noopener");
+  }
+
+  function initCalc() {
+    var root = document.getElementById("calc");
+    if (!root) return;
+    var sel = document.getElementById("calc-type");
+    if (sel) sel.addEventListener("change", function () { calcTier = 0; buildCalc(); });
+    var wrap = document.getElementById("calc-class");
+    if (wrap) wrap.addEventListener("click", function (e) {
+      var b = e.target.closest && e.target.closest(".calc-class-btn");
+      if (!b) return;
+      calcTier = parseInt(b.getAttribute("data-idx"), 10) || 0;
+      wrap.querySelectorAll(".calc-class-btn").forEach(function (x) { x.classList.remove("is-active"); });
+      b.classList.add("is-active");
+      calcRender();
+    });
+    var area = document.getElementById("calc-area");
+    if (area) area.addEventListener("input", calcRender);
+    var base = document.getElementById("calc-base");
+    if (base) base.addEventListener("change", calcRender);
+    root.querySelectorAll(".calc-opt").forEach(function (c) { c.addEventListener("change", calcRender); });
+    var cta = document.getElementById("calc-cta");
+    if (cta) cta.addEventListener("click", function (e) { e.preventDefault(); calcWAOpen(); });
+  }
+
+  // ===== Аналитика (грузится только при заданных ID) и cookie-уведомление ====
+  function initAnalytics() {
+    if (GA_ID) {
+      var s = document.createElement("script");
+      s.async = 1; s.src = "https://www.googletagmanager.com/gtag/js?id=" + GA_ID;
+      document.head.appendChild(s);
+      window.dataLayer = window.dataLayer || [];
+      window.gtag = function () { window.dataLayer.push(arguments); };
+      window.gtag("js", new Date());
+      window.gtag("config", GA_ID);
+    }
+  }
+
   // тот же «налив»-фон в тёмных секциях 04/05 (canvas .section-fx, фолбэк — CSS-градиент)
   function initSectionFx() {
     [["decor-fx", "decor"], ["objects-fx", "objects"], ["form-fx", "form"], ["sponsors-fx", "sponsors"]].forEach(function (pair) {
@@ -1081,6 +1250,8 @@
     initStripAutoScroll(document.getElementById("ral-grid"));
     initStripAutoScroll(document.getElementById("flake-grid"));
     initStockToasts();
+    initCalc();
+    initAnalytics();
 
     loadDict(currentLang)
       .then(function (d) { dict = d; applyI18n(); setActiveLangButton(); })

@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self' https://wa.me" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://www.googletagmanager.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https://www.google-analytics.com; connect-src 'self' https://www.google-analytics.com https://*.analytics.google.com; object-src 'none'; base-uri 'self'; form-action 'self' https://wa.me" />
   <meta name="referrer" content="strict-origin-when-cross-origin" />
   <title data-i18n="meta.title">Kaztop — полимерные наливные полы по Казахстану</title>
   <meta name="description" data-i18n-attr="content:meta.description" content="" />
@@ -388,7 +388,6 @@
             <p class="form-error" id="form-error" data-i18n="form.validation" hidden></p>
             <p class="form-notice" id="form-notice" data-i18n="form.disabled_notice" hidden>Приём заявок скоро откроется.</p>
             <button type="submit" class="btn btn--accent btn--block" data-i18n="form.submit">Отправить в WhatsApp</button>
-            <p class="form-disclaimer" data-i18n="form.disclaimer">Нажимая кнопку, вы открываете WhatsApp.</p>
           </form>
         </div>
       </div>
@@ -485,6 +484,7 @@
       <div class="footer__bottom">
         <p>© <span id="year"></span> <span data-i18n="footer.rights">Kaztop. Все права защищены.</span></p>
         <p class="footer__requisites" data-i18n="footer.requisites"></p>
+        <p class="footer__legal"><a href="privacy.html" data-i18n="footer.privacy">Политика конфиденциальности</a></p>
       </div>
     </div>
   </footer>
