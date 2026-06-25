@@ -629,7 +629,9 @@ h3 { font-family: var(--font-body); font-weight: 700; font-size: clamp(1.15rem, 
 .obj-named__meta { color: var(--gold); font-size: 0.78rem; font-weight: 600; margin-top: 0.15rem; }
 @media (min-width: 640px) { .objects-grid--named { grid-template-columns: 1fr 1fr; } }
 @media (min-width: 1000px) { .objects-grid--named { grid-template-columns: 1fr 1fr 1fr; } }
-.objects-list__label { font-family: var(--font-display); font-size: 1.05rem; color: var(--on-dark); margin: 2.2rem 0 1rem; }
+#objects-more { margin-top: 1.6rem; }
+.objects-more-wrap[hidden] { display: none; }
+.objects-list__label { font-family: var(--font-display); font-size: 1.05rem; color: var(--on-dark); margin: 1.6rem 0 1rem; }
 .objects-list { display: grid; grid-template-columns: 1fr; gap: 0.75rem; min-height: 80px; }
 @media (min-width: 640px) { .objects-list { grid-template-columns: 1fr 1fr; } }
 @media (min-width: 1000px) { .objects-list { grid-template-columns: 1fr 1fr 1fr 1fr; } }

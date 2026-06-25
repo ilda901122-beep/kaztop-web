@@ -821,6 +821,19 @@
     window.addEventListener("scroll", update, { passive: true });
   }
 
+  // ---- «Смотреть больше объектов» (раскрытие списка реализованных) ------
+  function initObjectsMore() {
+    var btn = document.getElementById("objects-more");
+    var wrap = document.getElementById("objects-more-wrap");
+    if (!btn || !wrap) return;
+    btn.addEventListener("click", function () {
+      var open = wrap.hasAttribute("hidden");
+      if (open) { wrap.removeAttribute("hidden"); } else { wrap.setAttribute("hidden", ""); }
+      btn.setAttribute("aria-expanded", open ? "true" : "false");
+      btn.textContent = getByPath(dict, open ? "objects.less" : "objects.more") || btn.textContent;
+    });
+  }
+
   // ---- Scroll reveal ----------------------------------------------------
   function initReveal() {
     var targets = document.querySelectorAll(
@@ -1129,6 +1142,7 @@
     initStripAutoScroll(document.getElementById("ral-grid"));
     initStripAutoScroll(document.getElementById("flake-grid"));
     initStockToasts();
+    initObjectsMore();
     if (typeof initCalc === "function") initCalc();
     initAnalytics();
 

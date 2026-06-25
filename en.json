@@ -52,6 +52,8 @@
     "placeholder": "Real Kaztop projects coming soon.",
     "card_caption": "Project · City · m²",
     "projects_label": "Completed projects",
+    "more": "See more projects",
+    "less": "Hide",
     "projects": [
       {
         "name": "Naiza-Kurylys Logistics Center",

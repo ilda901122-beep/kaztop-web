@@ -257,8 +257,11 @@
         <div class="objects-marquee">
           <div class="grid grid--objects" id="objects-grid"></div>
         </div>
-        <h3 class="objects-list__label" data-i18n="objects.projects_label">Среди объектов</h3>
-        <div class="objects-list" id="objects-list"></div>
+        <div class="center"><button type="button" class="btn btn--outline-light" id="objects-more" data-i18n="objects.more" aria-expanded="false" aria-controls="objects-more-wrap">Смотреть больше объектов</button></div>
+        <div class="objects-more-wrap" id="objects-more-wrap" hidden>
+          <h3 class="objects-list__label" data-i18n="objects.projects_label">Реализованные объекты</h3>
+          <div class="objects-list" id="objects-list"></div>
+        </div>
       </div>
     </section>
 
