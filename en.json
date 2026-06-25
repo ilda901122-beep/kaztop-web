@@ -51,47 +51,37 @@
     "sample_note": "sample — to be replaced with Kaztop photos",
     "placeholder": "Real Kaztop projects coming soon.",
     "card_caption": "Project · City · m²",
-    "projects_label": "Selected projects",
+    "projects_label": "Completed projects",
     "projects": [
       {
         "name": "Naiza-Kurylys Logistics Center",
         "city": "Astana",
-        "meta": "Polymer coating · 55 000 m²"
+        "meta": "Polymer coating · 55 000 m²"
       },
       {
         "name": "HighVill Residential",
         "city": "Astana",
-        "meta": "Topping concrete · 85 000 m²"
-      },
-      {
-        "name": "Tulpar-Talgo Plant",
-        "city": "Astana",
-        "meta": "Polymer coating · 29 000 m²"
+        "meta": "Topping concrete · 85 000 m²"
       },
       {
         "name": "Flat Glass Plant",
         "city": "Kyzylorda",
-        "meta": "Polymer coating · 41 000 m²"
+        "meta": "Polymer coating · 41 000 m²"
       },
       {
         "name": "Electric Locomotive Plant",
         "city": "Astana",
-        "meta": "Polymer coating · 30 000 m²"
+        "meta": "Polymer coating · 30 000 m²"
+      },
+      {
+        "name": "Naiza-Kurylys Logistics Center",
+        "city": "Shymkent",
+        "meta": "Topping concrete · 20 000 m²"
       },
       {
         "name": "Mega Plaza Mall",
         "city": "Astana",
         "meta": "Topping concrete"
-      },
-      {
-        "name": "Astana EXPO-2017",
-        "city": "Astana",
-        "meta": "Industrial floors · 15 000 m²"
-      },
-      {
-        "name": "Garysh Space Center",
-        "city": "Astana",
-        "meta": "Antistatic coating"
       },
       {
         "name": "Stadler Kazakhstan Plant",
@@ -126,11 +116,21 @@
       {
         "name": "Airport Aviation-Tech Center",
         "city": "Astana",
-        "meta": "Polymer coating · 5 200 m²"
+        "meta": "Polymer coating · 5 200 m²"
       },
       {
         "name": "BI-Industrial Hospital",
         "city": "Astana",
+        "meta": "Polymer coating"
+      },
+      {
+        "name": "KAZPACO Sports Complex",
+        "city": "Uralsk",
+        "meta": "Concrete & polymer floors"
+      },
+      {
+        "name": "City Hospital",
+        "city": "Pavlodar",
         "meta": "Polymer coating"
       }
     ]
