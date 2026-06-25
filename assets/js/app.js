@@ -1039,6 +1039,19 @@
   }
 
 
+  // ===== Аналитика (грузится только при заданных ID) =====================
+  function initAnalytics() {
+    if (GA_ID) {
+      var s = document.createElement("script");
+      s.async = 1; s.src = "https://www.googletagmanager.com/gtag/js?id=" + GA_ID;
+      document.head.appendChild(s);
+      window.dataLayer = window.dataLayer || [];
+      window.gtag = function () { window.dataLayer.push(arguments); };
+      window.gtag("js", new Date());
+      window.gtag("config", GA_ID);
+    }
+  }
+
   // тот же «налив»-фон в тёмных секциях 04/05 (canvas .section-fx, фолбэк — CSS-градиент)
   function initSectionFx() {
     [["decor-fx", "decor"], ["objects-fx", "objects"], ["form-fx", "form"], ["sponsors-fx", "sponsors"]].forEach(function (pair) {
