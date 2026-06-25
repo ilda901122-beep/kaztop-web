@@ -241,6 +241,27 @@
   function buildDecor() {
     var data = getByPath(dict, "palette");
     if (!data) return;
+    var basic = document.getElementById("ral-basic");
+    if (basic && data.basics) {
+      basic.innerHTML = "";
+      data.basics.forEach(function (c) {
+        var dot = document.createElement("div");
+        dot.className = "ral-dot";
+        var chip = document.createElement("span");
+        chip.className = "ral-dot__chip";
+        chip.style.background = c.hex;
+        var code = document.createElement("span");
+        code.className = "ral-dot__code";
+        code.textContent = c.ral;
+        var name = document.createElement("span");
+        name.className = "ral-dot__name";
+        name.textContent = c.name;
+        dot.appendChild(chip);
+        dot.appendChild(code);
+        dot.appendChild(name);
+        basic.appendChild(dot);
+      });
+    }
     var ral = document.getElementById("ral-grid");
     if (ral && data.colors) {
       ral.innerHTML = "";
@@ -536,6 +557,33 @@
     var placeholder = getByPath(dict, "objects.placeholder") || "Скоро добавим реальные объекты Kaztop.";
     var caption = getByPath(dict, "objects.card_caption") || "Объект · Город · м²";
 
+    // именованный список реальных объектов (соцдоказательство) — всегда, и при наличии фото
+    var list = document.getElementById("objects-list");
+    var projects = getByPath(dict, "objects.projects");
+    if (list && projects && projects.length) {
+      list.className = "objects-list";
+      list.innerHTML = "";
+      projects.forEach(function (p) {
+        var tile = document.createElement("article");
+        tile.className = "obj-named";
+        var nm = document.createElement("span");
+        nm.className = "obj-named__name";
+        nm.textContent = p.name;
+        var ct = document.createElement("span");
+        ct.className = "obj-named__city";
+        ct.textContent = p.city;
+        tile.appendChild(nm);
+        tile.appendChild(ct);
+        if (p.meta) {
+          var mt = document.createElement("span");
+          mt.className = "obj-named__meta";
+          mt.textContent = p.meta;
+          tile.appendChild(mt);
+        }
+        list.appendChild(tile);
+      });
+    }
+
     // манифест реальных фото (scripts/build-manifest.py → assets/img/objects.json);
     // нет/пустой/file:// → плитки-заглушки
     if (objectsManifest === null) {
@@ -575,25 +623,7 @@
       return;
     }
     grid.className = "grid grid--objects";
-    // реальные объекты (без фото пока) — именованные карточки как соцдоказательство
-    var projects = getByPath(dict, "objects.projects");
-    if (projects && projects.length) {
-      grid.classList.add("objects-grid--named");
-      projects.forEach(function (p) {
-        var tile = document.createElement("article");
-        tile.className = "obj-named";
-        var nm = document.createElement("span");
-        nm.className = "obj-named__name";
-        nm.textContent = p.name;
-        var ct = document.createElement("span");
-        ct.className = "obj-named__city";
-        ct.textContent = p.city;
-        tile.appendChild(nm);
-        tile.appendChild(ct);
-        grid.appendChild(tile);
-      });
-      return;
-    }
+    // фото ещё не подгружены — плитки-заглушки (именованный список рендерится отдельно выше)
     for (var i = 0; i < OBJECT_COUNT; i++) {
       var tile = document.createElement("article");
       tile.className = "obj-tile";

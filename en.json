@@ -54,60 +54,84 @@
     "projects_label": "Selected projects",
     "projects": [
       {
-        "name": "LASK Sports Complex",
-        "city": "Astana"
+        "name": "Naiza-Kurylys Logistics Center",
+        "city": "Astana",
+        "meta": "Polymer coating · 55 000 m²"
       },
       {
-        "name": "Arman Kala multi-level parking",
-        "city": "Astana"
+        "name": "HighVill Residential",
+        "city": "Astana",
+        "meta": "Topping concrete · 85 000 m²"
       },
       {
-        "name": "Indoor stadium",
-        "city": "Astana"
+        "name": "Tulpar-Talgo Plant",
+        "city": "Astana",
+        "meta": "Polymer coating · 29 000 m²"
       },
       {
-        "name": "Pit-Stop, Maykuben West LLP",
-        "city": "Ekibastuz"
+        "name": "Flat Glass Plant",
+        "city": "Kyzylorda",
+        "meta": "Polymer coating · 41 000 m²"
       },
       {
-        "name": "Nazarbayev University (parkings M1, P1, P2)",
-        "city": "Astana"
+        "name": "Electric Locomotive Plant",
+        "city": "Astana",
+        "meta": "Polymer coating · 30 000 m²"
       },
       {
-        "name": "Tulpar-Talgo plant",
-        "city": "Astana"
+        "name": "Mega Plaza Mall",
+        "city": "Astana",
+        "meta": "Topping concrete"
       },
       {
-        "name": "Garysh National Space Center",
-        "city": "Astana"
+        "name": "Astana EXPO-2017",
+        "city": "Astana",
+        "meta": "Industrial floors · 15 000 m²"
+      },
+      {
+        "name": "Garysh Space Center",
+        "city": "Astana",
+        "meta": "Antistatic coating"
+      },
+      {
+        "name": "Stadler Kazakhstan Plant",
+        "city": "Astana",
+        "meta": "Polymer coating"
+      },
+      {
+        "name": "Locomotive Assembly Plant",
+        "city": "Astana",
+        "meta": "Polymer coating"
       },
       {
         "name": "VIVA Pharm",
-        "city": "Almaty"
+        "city": "Almaty",
+        "meta": "Polymer coating"
       },
       {
-        "name": "Korme Exhibition Center",
-        "city": "Astana"
-      },
-      {
-        "name": "Park Avenue residential complex",
-        "city": "Astana"
-      },
-      {
-        "name": "Korkem 4 residential complex",
-        "city": "Astana"
-      },
-      {
-        "name": "Orbis Heavy Machinery",
-        "city": "Astana"
-      },
-      {
-        "name": "Aircraft hangars",
-        "city": "Astana"
+        "name": "Prime Aviation Hangar",
+        "city": "Astana",
+        "meta": "Polymer coating"
       },
       {
         "name": "Nazarbayev Center (parking)",
-        "city": "Astana"
+        "city": "Astana",
+        "meta": "Polymer coating"
+      },
+      {
+        "name": "Martial Arts Palace",
+        "city": "Astana",
+        "meta": "Concrete & polymer floors"
+      },
+      {
+        "name": "Airport Aviation-Tech Center",
+        "city": "Astana",
+        "meta": "Polymer coating · 5 200 m²"
+      },
+      {
+        "name": "BI-Industrial Hospital",
+        "city": "Astana",
+        "meta": "Polymer coating"
       }
     ]
   },
@@ -241,7 +265,7 @@
     "tagline": "Polymer coatings for concrete floors. Made in Kazakhstan.",
     "rights": "Kaztop. All rights reserved.",
     "instagram": "Instagram",
-    "requisites": "Sole proprietor Toishibekov",
+    "requisites": "KAZTOP LTS LLP · BIN 240240016933",
     "privacy": "Privacy Policy"
   },
   "trust": {
@@ -543,6 +567,49 @@
     "title": "Color and texture",
     "subtitle": "Standard RAL colors and decorative flakes. Other colors and compositions — on request.",
     "ral_label": "Standard RAL colors",
+    "basic_label": "Basic colors",
+    "basics": [
+      {
+        "ral": "RAL 9003",
+        "hex": "#F2F1EC",
+        "name": "White"
+      },
+      {
+        "ral": "RAL 7035",
+        "hex": "#C5C7C4",
+        "name": "Light grey"
+      },
+      {
+        "ral": "RAL 3020",
+        "hex": "#C1121F",
+        "name": "Red"
+      },
+      {
+        "ral": "RAL 1023",
+        "hex": "#F4C400",
+        "name": "Yellow"
+      },
+      {
+        "ral": "RAL 6018",
+        "hex": "#57A639",
+        "name": "Green"
+      },
+      {
+        "ral": "RAL 5015",
+        "hex": "#1E7BAE",
+        "name": "Blue"
+      },
+      {
+        "ral": "RAL 1015",
+        "hex": "#E6D2B5",
+        "name": "Beige"
+      },
+      {
+        "ral": "RAL 9005",
+        "hex": "#0A0A0A",
+        "name": "Black"
+      }
+    ],
     "flakes_label": "Flakes — standard compositions",
     "disclaimer": "On-screen colors are a guide. The exact tone is matched against the RAL reference scale and samples.",
     "cta": "Pick a color",
@@ -747,10 +814,10 @@
   "privacy": {
     "meta_title": "Privacy Policy — Kaztop",
     "title": "Privacy Policy",
-    "updated": "Last updated: 2026-06-23",
+    "updated": "Last updated: 25.06.2026",
     "intro": "This policy describes what personal data we process on the site and how we protect it — in line with the Law of the Republic of Kazakhstan “On Personal Data and Its Protection” No. 94-V.",
     "s1_t": "1. Operator",
-    "s1_b": "The data operator is sole proprietor Toishibekov. For personal-data matters, contact us via the phone/WhatsApp listed in the “Contacts” section of the site.",
+    "s1_b": "The personal data operator is KAZTOP LTS LLP, BIN 240240016933, Astana, Abylai Khan Avenue 5/3. For personal data matters, contact us at +7 (7172) 37-50-14 or via WhatsApp listed in the “Contacts” section.",
     "s2_t": "2. What data we process",
     "s2_b": "Via the request form — your name and phone number, which you enter yourself. Via analytics — anonymized technical visit data (pages, device, referral source).",
     "s3_t": "3. Purposes",

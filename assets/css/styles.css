@@ -559,6 +559,12 @@ h3 { font-family: var(--font-body); font-weight: 700; font-size: clamp(1.15rem, 
 .ral-grid::-webkit-scrollbar-track, .flake-grid::-webkit-scrollbar-track { background: rgba(255,255,255,0.1); border-radius: 999px; }
 .ral-grid::-webkit-scrollbar-thumb, .flake-grid::-webkit-scrollbar-thumb { background: var(--gold); border-radius: 999px; border: 2px solid transparent; background-clip: padding-box; }
 .ral-grid::-webkit-scrollbar-thumb:hover, .flake-grid::-webkit-scrollbar-thumb:hover { background: var(--gold-deep); background-clip: padding-box; }
+.ral-basic { display: flex; flex-wrap: wrap; gap: 1.1rem 1.4rem; min-height: 104px; margin-bottom: 0.4rem; }
+.ral-dot { display: flex; flex-direction: column; align-items: center; text-align: center; width: 72px; }
+.ral-dot__chip { width: 56px; height: 56px; border-radius: 50%; border: 1px solid rgba(255,255,255,0.35); box-shadow: 0 4px 12px rgba(0,0,0,0.28); }
+.ral-dot__code { font-family: var(--font-display); font-weight: 700; font-size: 0.72rem; color: var(--on-dark); margin-top: 0.4rem; }
+.ral-dot__name { font-size: 0.7rem; color: var(--on-dark-muted); line-height: 1.2; }
+@media (min-width: 680px) { .ral-dot__chip { width: 64px; height: 64px; } .ral-dot { width: 80px; } }
 .ral-swatch { flex: 0 0 132px; scroll-snap-align: start; display: flex; flex-direction: column; gap: 0.15rem; }
 .ral-swatch__chip { display: block; height: 76px; border-radius: var(--radius-sm); border: 1px solid var(--line-dark); }
 .ral-swatch__code { font-family: var(--font-display); font-weight: 700; font-size: 0.78rem; color: var(--on-dark); margin-top: 0.3rem; }
@@ -620,8 +626,13 @@ h3 { font-family: var(--font-body); font-weight: 700; font-size: clamp(1.15rem, 
 .obj-named { display: flex; flex-direction: column; gap: 0.2rem; padding: 0.9rem 1.1rem; border: 1px solid var(--line-dark); border-radius: var(--radius-sm); background: rgba(255,255,255,0.04); }
 .obj-named__name { color: var(--on-dark); font-weight: 600; font-size: 0.95rem; line-height: 1.3; }
 .obj-named__city { color: var(--on-dark-muted); font-size: 0.8rem; }
+.obj-named__meta { color: var(--gold); font-size: 0.78rem; font-weight: 600; margin-top: 0.15rem; }
 @media (min-width: 640px) { .objects-grid--named { grid-template-columns: 1fr 1fr; } }
 @media (min-width: 1000px) { .objects-grid--named { grid-template-columns: 1fr 1fr 1fr; } }
+.objects-list__label { font-family: var(--font-display); font-size: 1.05rem; color: var(--on-dark); margin: 2.2rem 0 1rem; }
+.objects-list { display: grid; grid-template-columns: 1fr; gap: 0.75rem; min-height: 80px; }
+@media (min-width: 640px) { .objects-list { grid-template-columns: 1fr 1fr; } }
+@media (min-width: 1000px) { .objects-list { grid-template-columns: 1fr 1fr 1fr 1fr; } }
 
 /* ============ Каталог систем — карточки с фото + «Подробнее» ============ */
 .systems-grid { display: grid; grid-template-columns: 1fr; gap: 1rem; align-items: start; }

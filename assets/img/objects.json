@@ -1,9 +1,9 @@
 [
   {
     "src": "assets/img/objects/work_expo.webp",
-    "caption_ru": "EXPO 2017 · Астана",
-    "caption_kk": "EXPO 2017 · Астана",
-    "caption_en": "EXPO 2017 · Astana"
+    "caption_ru": "EXPO 2017 · Астана · 15 000 м²",
+    "caption_kk": "EXPO 2017 · Астана · 15 000 м²",
+    "caption_en": "EXPO 2017 · Astana · 15 000 m²"
   },
   {
     "src": "assets/img/objects/obj03.webp",
@@ -13,9 +13,9 @@
   },
   {
     "src": "assets/img/objects/obj10.webp",
-    "caption_ru": "Завод «Тулпар-Talgo» · Астана",
-    "caption_kk": "Завод «Тулпар-Talgo» · Астана",
-    "caption_en": "Tulpar-Talgo plant · Astana"
+    "caption_ru": "Завод «Тулпар-Talgo» · Астана · полимер 29 000 м²",
+    "caption_kk": "«Тұлпар-Talgo» зауыты · Астана · полимер 29 000 м²",
+    "caption_en": "Tulpar-Talgo plant · Astana · polymer 29 000 m²"
   },
   {
     "src": "assets/img/objects/obj01.webp",
@@ -25,9 +25,9 @@
   },
   {
     "src": "assets/img/objects/obj13.webp",
-    "caption_ru": "Нац. космический центр «Гарыш» · Астана",
-    "caption_kk": "«Ғарыш» ұлттық ғарыш орталығы · Астана",
-    "caption_en": "Garysh National Space Center · Astana"
+    "caption_ru": "Космоцентр «Гарыш» · Астана · антистатика",
+    "caption_kk": "«Ғарыш» ғарыш орталығы · Астана · антистатика",
+    "caption_en": "Garysh Space Center · Astana · antistatic"
   },
   {
     "src": "assets/img/objects/obj16.webp",
