@@ -567,9 +567,9 @@
   },
   "palette": {
     "title": "Color and texture",
-    "subtitle": "Standard RAL colors and decorative flakes. Other colors and compositions — on request.",
-    "ral_label": "Standard RAL colors",
-    "basic_label": "Basic colors",
+    "subtitle": "Ready RAL colors and decorative flakes. Other colors and compositions on request.",
+    "ral_label": "Extended RAL palette",
+    "basic_label": "Main colors",
     "basics": [
       {
         "ral": "RAL 9003",
