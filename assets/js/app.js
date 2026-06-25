@@ -1125,6 +1125,7 @@
     if (!initSpline()) initHero3D();
     initSectionFx();
     initObjectsScroll();
+    initStripAutoScroll(document.getElementById("ral-basic"));
     initStripAutoScroll(document.getElementById("ral-grid"));
     initStripAutoScroll(document.getElementById("flake-grid"));
     initStockToasts();
