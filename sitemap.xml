@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- {{SITE_URL}} — заполнить реальным доменом при деплое (см. CLIENT-DATA.md) -->
+<!-- https://ilda901122-beep.github.io/kaztop-web — заполнить реальным доменом при деплое (см. CLIENT-DATA.md) -->
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>{{SITE_URL}}/</loc>
+    <loc>https://ilda901122-beep.github.io/kaztop-web/</loc>
     <lastmod>2026-06-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
