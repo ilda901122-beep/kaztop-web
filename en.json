@@ -255,7 +255,7 @@
     "whatsapp_label": "WhatsApp",
     "whatsapp_value": "Message on WhatsApp",
     "phone_value": "+7 701 244 8871",
-    "address_value": "Astana, Abylai Khan Avenue 5/3",
+    "address_value": "Astana",
     "hours_value": "Mon–Sun · 9:00–18:00"
   },
   "floating": {
@@ -819,7 +819,7 @@
     "updated": "Last updated: 25.06.2026",
     "intro": "This policy describes what personal data we process on the site and how we protect it — in line with the Law of the Republic of Kazakhstan “On Personal Data and Its Protection” No. 94-V.",
     "s1_t": "1. Operator",
-    "s1_b": "The personal data operator is Individual Entrepreneur Toishibekov, IIN 721009300478, Astana, Abylai Khan Avenue 5/3. For personal data matters, contact us by phone or via WhatsApp listed in the “Contacts” section.",
+    "s1_b": "The personal data operator is Individual Entrepreneur Toishibekov, IIN 721009300478, Astana. For personal data matters, contact us by phone or via WhatsApp listed in the “Contacts” section.",
     "s2_t": "2. What data we process",
     "s2_b": "Via the request form — your name and phone number, which you enter yourself. Via analytics — anonymized technical visit data (pages, device, referral source).",
     "s3_t": "3. Purposes",
