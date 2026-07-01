@@ -17,8 +17,9 @@
   var PHONE_NUMBER = "+77012448871";
 
   var SUPPORTED = ["kk", "ru", "en"];
-  // Аналитика: вставить реальный ID от заказчика. Пусто → счётчик НЕ грузится.
+  // Аналитика: вставить реальные ID от заказчика. Пусто → счётчик НЕ грузится.
   var GA_ID = "";   // Google Analytics 4 — Measurement ID (G-XXXXXXX)
+  var YM_ID = "";   // Яндекс.Метрика — номер счётчика (только цифры, напр. 12345678)
   var DEFAULT_LANG = "ru";
   var STORAGE_KEY = "kaztop_lang";
 
@@ -1092,6 +1093,16 @@
       window.gtag = function () { window.dataLayer.push(arguments); };
       window.gtag("js", new Date());
       window.gtag("config", GA_ID);
+    }
+    if (YM_ID) {
+      (function (m, e, t, r, i, k, a) {
+        m[i] = m[i] || function () { (m[i].a = m[i].a || []).push(arguments); };
+        m[i].l = 1 * new Date();
+        for (var j = 0; j < e.scripts.length; j++) { if (e.scripts[j].src === r) return; }
+        k = e.createElement(t); a = e.getElementsByTagName(t)[0];
+        k.async = 1; k.src = r; a.parentNode.insertBefore(k, a);
+      })(window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+      window.ym(YM_ID, "init", { clickmap: true, trackLinks: true, accurateTrackBounce: true, webvisor: true });
     }
   }
 
