@@ -1,5 +1,5 @@
 User-agent: *
 Allow: /
 
-# https://ilda901122-beep.github.io/kaztop-web — заполнить реальным доменом при деплое (см. CLIENT-DATA.md)
-Sitemap: https://ilda901122-beep.github.io/kaztop-web/sitemap.xml
+# https://kaztop.com.kz — заполнить реальным доменом при деплое (см. CLIENT-DATA.md)
+Sitemap: https://kaztop.com.kz/sitemap.xml
