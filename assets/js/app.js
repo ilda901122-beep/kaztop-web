@@ -790,6 +790,20 @@
     document.querySelectorAll(".lang-btn").forEach(function (btn) {
       btn.classList.toggle("is-active", btn.getAttribute("data-lang") === currentLang);
     });
+    // обновить надпись на свёрнутой кнопке (текущий язык)
+    document.querySelectorAll(".lang-switch").forEach(function (sw) {
+      var active = sw.querySelector('.lang-btn[data-lang="' + currentLang + '"]');
+      var label = sw.querySelector(".lang-current__label");
+      if (active && label) label.textContent = active.textContent;
+    });
+  }
+
+  function closeLangMenus() {
+    document.querySelectorAll(".lang-switch.is-open").forEach(function (sw) {
+      sw.classList.remove("is-open");
+      var cur = sw.querySelector(".lang-current");
+      if (cur) cur.setAttribute("aria-expanded", "false");
+    });
   }
 
   function switchLang(lang) {
@@ -807,7 +821,24 @@
     document.querySelectorAll(".lang-btn").forEach(function (btn) {
       btn.addEventListener("click", function () {
         switchLang(btn.getAttribute("data-lang"));
+        closeLangMenus();
       });
+    });
+    // свёрнутая кнопка → раскрыть/свернуть список языков
+    document.querySelectorAll(".lang-current").forEach(function (cur) {
+      cur.addEventListener("click", function (e) {
+        e.stopPropagation();
+        var sw = cur.closest(".lang-switch");
+        var open = sw.classList.toggle("is-open");
+        cur.setAttribute("aria-expanded", open ? "true" : "false");
+      });
+    });
+    // клик вне / Esc → закрыть
+    document.addEventListener("click", function (e) {
+      if (!e.target.closest(".lang-switch")) closeLangMenus();
+    });
+    document.addEventListener("keydown", function (e) {
+      if (e.key === "Escape") closeLangMenus();
     });
   }
 
