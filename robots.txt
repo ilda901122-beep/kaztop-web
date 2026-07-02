@@ -1,5 +1,4 @@
 User-agent: *
 Allow: /
 
-# https://kaztop.com.kz — заполнить реальным доменом при деплое (см. CLIENT-DATA.md)
 Sitemap: https://kaztop.com.kz/sitemap.xml
