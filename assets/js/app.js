@@ -761,6 +761,7 @@
         system: sysName,
         area: form.elements.area.value.trim()
       });
+      track("generate_lead", { method: "whatsapp_form" });
       window.open(waLink(message), "_blank", "noopener");
     });
   }
@@ -1106,6 +1107,32 @@
     }
   }
 
+  // единая отправка события в GA4 (gtag) и Яндекс.Метрику (reachGoal), если подключены
+  function track(name, params) {
+    if (typeof window.gtag === "function") window.gtag("event", name, params || {});
+    if (YM_ID && typeof window.ym === "function") window.ym(YM_ID, "reachGoal", name);
+  }
+
+  // отслеживание кликов по WhatsApp / «Позвонить» / Instagram (делегированно — переживает ре-рендер)
+  function initEventTracking() {
+    document.addEventListener("click", function (e) {
+      var a = e.target.closest && e.target.closest("a, button");
+      if (!a) return;
+      var href = a.getAttribute("href") || "";
+      var id = a.id || "";
+      if (href.indexOf("wa.me") !== -1 || id.indexOf("whatsapp") !== -1 ||
+          a.classList.contains("fab--wa") || a.classList.contains("acc-cta")) {
+        track("whatsapp_click"); return;
+      }
+      if (href.indexOf("tel:") === 0 || id.indexOf("call") !== -1) {
+        track("call_click"); return;
+      }
+      if (href.indexOf("instagram.com") !== -1 || a.classList.contains("fab--ig")) {
+        track("instagram_click"); return;
+      }
+    }, true);
+  }
+
   // тот же «налив»-фон в тёмных секциях 04/05 (canvas .section-fx, фолбэк — CSS-градиент)
   function initSectionFx() {
     [["decor-fx", "decor"], ["objects-fx", "objects"], ["form-fx", "form"], ["sponsors-fx", "sponsors"]].forEach(function (pair) {
@@ -1156,6 +1183,7 @@
     initObjectsMore();
     if (typeof initCalc === "function") initCalc();
     initAnalytics();
+    initEventTracking();
 
     loadDict(currentLang)
       .then(function (d) { dict = d; applyI18n(); setActiveLangButton(); })
