@@ -504,6 +504,13 @@
       cta.setAttribute("data-systemkey", it.key || "");
       extra.appendChild(cta);
 
+      // кнопка «Свернуть» внизу раскрытого блока (чтобы не листать вверх)
+      var collapse = document.createElement("button");
+      collapse.type = "button";
+      collapse.className = "type-card__collapse";
+      collapse.textContent = lessLabel;
+      extra.appendChild(collapse);
+
       // кнопка раскрытия
       var toggle = document.createElement("button");
       toggle.type = "button";
@@ -529,6 +536,18 @@
     var grid = document.getElementById("systems-grid");
     if (!grid) return;
     grid.addEventListener("click", function (e) {
+      // «Свернуть» снизу раскрытой карточки → закрыть и вернуться к её началу
+      var col = e.target.closest && e.target.closest(".type-card__collapse");
+      if (col) {
+        var oc = col.closest(".type-card");
+        oc.classList.remove("is-open");
+        var ob = oc.querySelector(".type-card__toggle");
+        var ol = ob && ob.querySelector(".type-card__toggle-label");
+        if (ob) ob.setAttribute("aria-expanded", "false");
+        if (ol) ol.textContent = ob.getAttribute("data-more");
+        oc.scrollIntoView({ behavior: "smooth", block: "start" });
+        return;
+      }
       var btn = e.target.closest && e.target.closest(".type-card__toggle");
       if (!btn) return;
       var card = btn.closest(".type-card");
