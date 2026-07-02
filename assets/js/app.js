@@ -18,7 +18,7 @@
 
   var SUPPORTED = ["kk", "ru", "en"];
   // Аналитика: вставить реальные ID от заказчика. Пусто → счётчик НЕ грузится.
-  var GA_ID = "";   // Google Analytics 4 — Measurement ID (G-XXXXXXX)
+  var GA_ID = "G-E779SCVX7K";   // Google Analytics 4 — Measurement ID (G-XXXXXXX)
   var YM_ID = "";   // Яндекс.Метрика — номер счётчика (только цифры, напр. 12345678)
   var DEFAULT_LANG = "ru";
   var STORAGE_KEY = "kaztop_lang";
