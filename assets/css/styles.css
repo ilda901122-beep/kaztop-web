@@ -262,19 +262,18 @@ h3 { font-family: var(--font-body); font-weight: 700; font-size: clamp(1.15rem, 
 @keyframes scrolldot { 0%,100% { opacity: 0; transform: translate(-50%, 0); } 50% { opacity: 1; transform: translate(-50%, 8px); } }
 /* мобайл: больше воздуха — заголовок сверху, цифра + кнопка опускаются вниз экрана */
 @media (max-width: 679px) {
-  /* дизайнерская иерархия: заголовок → счётчик → преимущества (сверху),
-     кнопка — крупная, на всю ширину, заякорена ниже; карта — фон */
-  .hero { align-items: stretch; padding-top: calc(var(--header-h) + 1.8rem); padding-bottom: 2.4rem; }
-  .hero__inner { display: flex; flex-direction: column; min-height: 74svh; }
+  /* дизайнерская иерархия: заголовок → счётчик → преимущества → кнопка,
+     единым блоком сверху с ровным ритмом; карта — приглушённый фон */
+  .hero { align-items: stretch; min-height: auto; padding-top: calc(var(--header-h) + 1.8rem); padding-bottom: 2.6rem; }
+  .hero__inner { display: flex; flex-direction: column; }
   .hero__title { margin-bottom: 1.15rem; line-height: 1.12; text-shadow: 0 2px 16px rgba(3, 16, 20, 0.6); }
   .hero__stat { margin: 0 0 1.5rem; text-shadow: 0 1px 12px rgba(3, 16, 20, 0.55); }
-  .hero__avail { margin: 0 0 1.6rem; }
-  .hero__cta { margin-top: auto; }
+  .hero__avail { margin: 0 0 2rem; }
   .hero__cta .btn { width: 100%; justify-content: center; padding-top: 1.05rem; padding-bottom: 1.05rem; font-size: 1.02rem; }
   .hero__map {
-    top: 48%; left: 50%; right: auto; bottom: auto;
+    top: 46%; left: 50%; right: auto; bottom: auto;
     transform: translate(-50%, -50%);
-    width: min(94vw, 460px); opacity: 0.28;
+    width: min(92vw, 440px); opacity: 0.26;
   }
 }
 /* десктоп: цифра + кнопка опущены ниже заголовка (больше воздуха в hero) */
