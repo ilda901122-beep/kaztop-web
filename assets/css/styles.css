@@ -262,9 +262,16 @@ h3 { font-family: var(--font-body); font-weight: 700; font-size: clamp(1.15rem, 
 @keyframes scrolldot { 0%,100% { opacity: 0; transform: translate(-50%, 0); } 50% { opacity: 1; transform: translate(-50%, 8px); } }
 /* мобайл: больше воздуха — заголовок сверху, цифра + кнопка опускаются вниз экрана */
 @media (max-width: 679px) {
-  .hero { align-items: stretch; padding-top: calc(var(--header-h) + 2rem); }
+  /* контент единым блоком сверху; карта — приглушённый фон по центру */
+  .hero { align-items: stretch; padding-top: calc(var(--header-h) + 1.6rem); padding-bottom: 2.4rem; }
   .hero__inner { display: flex; flex-direction: column; }
-  .hero__stat { margin-top: auto; }
+  .hero__title { margin-bottom: 1rem; text-shadow: 0 2px 16px rgba(3, 16, 20, 0.55); }
+  .hero__stat { margin: 0 0 1.1rem; text-shadow: 0 1px 12px rgba(3, 16, 20, 0.5); }
+  .hero__map {
+    top: 50%; left: 50%; right: auto; bottom: auto;
+    transform: translate(-50%, -50%);
+    width: min(96vw, 470px); opacity: 0.3;
+  }
 }
 /* десктоп: цифра + кнопка опущены ниже заголовка (больше воздуха в hero) */
 @media (min-width: 680px) {
