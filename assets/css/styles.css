@@ -167,9 +167,9 @@ h3 { font-family: var(--font-body); font-weight: 700; font-size: clamp(1.15rem, 
 
 /* ---------- Hero ---------- */
 .hero {
-  position: relative; min-height: clamp(520px, 86svh, 720px); display: flex; align-items: center;
+  position: relative; min-height: clamp(520px, 86svh, 720px); display: flex; align-items: center; align-items: safe center;
   background: var(--kz-deep); color: var(--on-dark); overflow: hidden;
-  padding: calc(var(--header-h) + 1rem) 0 2.2rem;
+  padding: calc(var(--header-h) + 2.2rem) 0 2.2rem;
 }
 .hero__bg {
   position: absolute; inset: 0; z-index: 0;
