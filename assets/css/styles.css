@@ -132,8 +132,8 @@ h3 { font-family: var(--font-body); font-weight: 700; font-size: clamp(1.15rem, 
 .site-header[data-state="top"] .nav a:hover { color: var(--gold); }
 .site-header[data-state="top"] .nav-toggle span { background: #fff; }
 .site-header[data-state="top"] .lang-btn { color: rgba(255,255,255,0.72); }
-.site-header[data-state="top"] .lang-switch { border-color: rgba(255,255,255,0.3); }
-.site-header[data-state="top"] .nav-toggle { border-color: rgba(255,255,255,0.3); }
+.site-header[data-state="top"] .lang-switch { background: rgba(255,255,255,0.14); }
+.site-header[data-state="top"] .nav-toggle { background: rgba(255,255,255,0.14); }
 .site-header[data-state="scrolled"] {
   background: rgba(255, 255, 255, 0.88); backdrop-filter: blur(14px);
   border-bottom-color: var(--line); box-shadow: var(--shadow-sm);
@@ -153,11 +153,11 @@ h3 { font-family: var(--font-body); font-weight: 700; font-size: clamp(1.15rem, 
 .header__actions { display: flex; align-items: center; gap: 0.6rem; flex-shrink: 0; flex-wrap: nowrap; }
 /* на мобайле звонок, WhatsApp и Instagram дублируются плавающей панелью — прячем (место под «бургер») */
 .header__actions .header__call, .header__actions .header__wa, .header__actions .header__ig { display: none; }
-.lang-switch { display: inline-flex; align-items: stretch; height: 40px; flex: none; border: 1px solid var(--line-strong); border-radius: 999px; overflow: hidden; }
+.lang-switch { display: inline-flex; align-items: stretch; height: 40px; flex: none; background: rgba(6,23,28,0.06); border-radius: 999px; overflow: hidden; }
 .lang-btn { display: inline-flex; align-items: center; background: transparent; border: 0; color: var(--muted); font-family: var(--font-display); padding: 0 clamp(0.55rem, 2.4vw, 0.95rem); font-size: clamp(0.78rem, 2.6vw, 0.9rem); font-weight: 700; cursor: pointer; transition: background 0.15s ease, color 0.15s ease; }
 .lang-btn.is-active { background: var(--kz); color: #fff; }
 
-.nav-toggle { display: inline-flex; flex: none; flex-direction: column; justify-content: center; gap: 4px; width: 40px; height: 40px; border: 1px solid var(--line-strong); border-radius: 11px; background: transparent; cursor: pointer; }
+.nav-toggle { display: inline-flex; flex: none; flex-direction: column; justify-content: center; gap: 4px; width: 40px; height: 40px; border: 0; border-radius: 12px; background: rgba(6,23,28,0.06); cursor: pointer; }
 .nav-toggle span { display: block; height: 2px; width: 18px; margin: 0 auto; background: var(--text); border-radius: 2px; }
 .header__actions .btn--sm { display: none; }
 
