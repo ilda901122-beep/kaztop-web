@@ -138,26 +138,26 @@ h3 { font-family: var(--font-body); font-weight: 700; font-size: clamp(1.15rem, 
   background: rgba(255, 255, 255, 0.88); backdrop-filter: blur(14px);
   border-bottom-color: var(--line); box-shadow: var(--shadow-sm);
 }
-.header__inner { width: 100%; display: flex; align-items: center; justify-content: space-between; gap: 1rem; }
-.brand { display: inline-flex; align-items: center; gap: 9px; }
+.header__inner { width: 100%; display: flex; align-items: center; justify-content: space-between; gap: 1rem; flex-wrap: nowrap; }
+.brand { display: inline-flex; align-items: center; gap: 9px; flex-shrink: 0; }
 .brand__logo { width: 30px; height: 30px; flex: none; color: var(--text); }
 .site-header[data-state="top"] .brand__logo { color: #fff; }
 .footer__brand .brand__logo { color: #fff; }
-.brand__mark { font-family: var(--font-display); font-weight: 800; letter-spacing: 0.02em; font-size: 1.25rem; color: var(--text); }
+.brand__mark { font-family: var(--font-display); font-weight: 800; letter-spacing: 0.02em; font-size: clamp(1.05rem, 4.2vw, 1.25rem); color: var(--text); white-space: nowrap; }
 .brand__dot { width: 9px; height: 9px; border-radius: 50%; background: var(--gold); box-shadow: 0 0 0 3px rgba(254, 197, 12, 0.25); }
 
 .nav { display: none; gap: 1.15rem; font-size: 0.9rem; font-weight: 600; }
 .nav a { color: var(--muted); transition: color 0.15s ease; white-space: nowrap; }
 .nav a:hover { color: var(--kz); }
 
-.header__actions { display: flex; align-items: center; gap: 0.6rem; }
+.header__actions { display: flex; align-items: center; gap: 0.6rem; flex-shrink: 0; flex-wrap: nowrap; }
 /* на мобайле звонок, WhatsApp и Instagram дублируются плавающей панелью — прячем (место под «бургер») */
 .header__actions .header__call, .header__actions .header__wa, .header__actions .header__ig { display: none; }
-.lang-switch { display: inline-flex; border: 1px solid var(--line-strong); border-radius: 999px; overflow: hidden; }
-.lang-btn { background: transparent; border: 0; color: var(--muted); font-family: var(--font-display); padding: 0.52rem 0.95rem; font-size: 0.9rem; font-weight: 700; cursor: pointer; transition: background 0.15s ease, color 0.15s ease; }
+.lang-switch { display: inline-flex; align-items: stretch; height: 40px; flex: none; border: 1px solid var(--line-strong); border-radius: 999px; overflow: hidden; }
+.lang-btn { display: inline-flex; align-items: center; background: transparent; border: 0; color: var(--muted); font-family: var(--font-display); padding: 0 clamp(0.55rem, 2.4vw, 0.95rem); font-size: clamp(0.78rem, 2.6vw, 0.9rem); font-weight: 700; cursor: pointer; transition: background 0.15s ease, color 0.15s ease; }
 .lang-btn.is-active { background: var(--kz); color: #fff; }
 
-.nav-toggle { display: inline-flex; flex-direction: column; justify-content: center; gap: 4px; width: 42px; height: 42px; border: 1px solid var(--line-strong); border-radius: 11px; background: transparent; cursor: pointer; }
+.nav-toggle { display: inline-flex; flex: none; flex-direction: column; justify-content: center; gap: 4px; width: 40px; height: 40px; border: 1px solid var(--line-strong); border-radius: 11px; background: transparent; cursor: pointer; }
 .nav-toggle span { display: block; height: 2px; width: 18px; margin: 0 auto; background: var(--text); border-radius: 2px; }
 .header__actions .btn--sm { display: none; }
 
@@ -458,11 +458,7 @@ h3 { font-family: var(--font-body); font-weight: 700; font-size: clamp(1.15rem, 
    Responsive
    ========================================================= */
 @media (max-width: 400px) {
-  .brand__mark { font-size: 1.02rem; }
-  .icon-btn { width: 38px; height: 38px; }
-  .header__actions { gap: 0.3rem; }
-  .lang-btn { padding: 0.46rem 0.5rem; font-size: 0.76rem; }
-  .nav-toggle { width: 38px; }
+  .header__actions { gap: 0.4rem; }
 }
 @media (min-width: 680px) {
   .grid--2 { grid-template-columns: 1fr 1fr; }
