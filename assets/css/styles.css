@@ -50,7 +50,7 @@
   --shadow:    0 22px 55px rgba(14, 28, 33, 0.14);
   --shadow-dark: 0 30px 70px rgba(0, 0, 0, 0.55);
 
-  --font-display: "Unbounded", "Segoe UI", system-ui, -apple-system, sans-serif;
+  --font-display: "Manrope", "Segoe UI", system-ui, -apple-system, "Helvetica Neue", Arial, sans-serif;
   --font-body: "Manrope", "Segoe UI", system-ui, -apple-system, "Helvetica Neue", Arial, sans-serif;
 
   --header-h: 72px;
