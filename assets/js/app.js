@@ -10,11 +10,15 @@
   // {{WHATSAPP_NUMBER}} — номер Kaztop в международном формате без "+" и пробелов
   // (например 77011234567). Пока пусто — ссылка откроет WhatsApp с готовым
   // текстом и предложит выбрать контакт. ЗАМЕНИТЬ на номер клиента.
-  var WHATSAPP_NUMBER = "77012448871";
+  // Настя — расчёт (форма, hero, хедер, плавающая WhatsApp/звонок ведут сюда)
+  var WHATSAPP_NUMBER = "77013618252";
 
   // {{PHONE_NUMBER}} — телефон Kaztop для tel: (например "+77011234567").
   // Пусто → кнопки «Позвонить» ведут к секции контактов (#contacts).
-  var PHONE_NUMBER = "+77012448871";
+  var PHONE_NUMBER = "+77013618252";
+
+  // Артём — консультация (отдельная кнопка WhatsApp в секции «Контакты»)
+  var WHATSAPP_CONSULT = "77053504896";
 
   var SUPPORTED = ["kk", "ru", "en"];
   // Аналитика: вставить реальные ID от заказчика. Пусто → счётчик НЕ грузится.
@@ -685,6 +689,11 @@
       var el = document.getElementById(id);
       if (el) el.setAttribute("href", tel);
     });
+    // Артём — консультация (отдельная WhatsApp-кнопка в контактах)
+    var wa2 = document.getElementById("contact-whatsapp-2");
+    if (wa2 && WHATSAPP_CONSULT) {
+      wa2.setAttribute("href", "https://wa.me/" + WHATSAPP_CONSULT + "?text=" + encodeURIComponent(intro));
+    }
   }
 
   function buildLeadMessage(data) {
