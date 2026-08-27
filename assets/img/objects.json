@@ -61,27 +61,27 @@
   },
   {
     "src": "assets/img/objects/obj06.webp",
-    "caption_ru": "Производственный цех",
-    "caption_kk": "Өндірістік цех",
-    "caption_en": "Production workshop"
+    "caption_ru": "Выставочный центр «Корме» · Астана",
+    "caption_kk": "«Көрме» көрме орталығы · Астана",
+    "caption_en": "Korme Exhibition Center · Astana"
   },
   {
     "src": "assets/img/objects/obj11.webp",
-    "caption_ru": "Производственный цех",
-    "caption_kk": "Өндірістік цех",
-    "caption_en": "Production workshop"
+    "caption_ru": "Авиаангар · Астана",
+    "caption_kk": "Авиаангар · Астана",
+    "caption_en": "Aviation hangar · Astana"
   },
   {
     "src": "assets/img/objects/obj09.webp",
-    "caption_ru": "Складское помещение",
-    "caption_kk": "Қойма үй-жайы",
-    "caption_en": "Warehouse space"
+    "caption_ru": "Назарбаев Университет, паркинги М1, Р1 и Р2 · Астана",
+    "caption_kk": "Назарбаев Университеті, М1, Р1 және Р2 паркингтері · Астана",
+    "caption_en": "Nazarbayev University, parking M1, P1, P2 · Astana"
   },
   {
     "src": "assets/img/objects/obj15.webp",
-    "caption_ru": "Складское помещение",
-    "caption_kk": "Қойма үй-жайы",
-    "caption_en": "Warehouse space"
+    "caption_ru": "Паркинг · Астана",
+    "caption_kk": "Паркинг · Астана",
+    "caption_en": "Parking · Astana"
   },
   {
     "src": "assets/img/objects/work06.webp",
@@ -97,33 +97,33 @@
   },
   {
     "src": "assets/img/objects/obj02.webp",
-    "caption_ru": "Многоуровневый паркинг · Астана",
-    "caption_kk": "Көп деңгейлі паркинг · Астана",
-    "caption_en": "Multi-level parking · Astana"
+    "caption_ru": "Многоуровневый паркинг «Арман Кала» · Астана",
+    "caption_kk": "«Арман Қала» көпдеңгейлі паркингі · Астана",
+    "caption_en": "Arman Kala multi-level parking · Astana"
   },
   {
     "src": "assets/img/objects/obj04.webp",
-    "caption_ru": "Паркинг — наливной пол",
-    "caption_kk": "Паркинг — құйма еден",
-    "caption_en": "Parking — poured floor"
+    "caption_ru": "«Пит-Стоп» резерва ТОО «Майкубень Вест» · Экибастуз",
+    "caption_kk": "«Майкубень Вест» ЖШС «Пит-Стоп» алаңы · Екібастұз",
+    "caption_en": "Pit-Stop area, Maikuben West LLP · Ekibastuz"
   },
   {
     "src": "assets/img/objects/obj08.webp",
-    "caption_ru": "Паркинг",
-    "caption_kk": "Паркинг",
-    "caption_en": "Parking"
+    "caption_ru": "Паркинг ЖК «Park Avenue», 1-я очередь · Астана",
+    "caption_kk": "«Park Avenue» ТК паркингі, 1-кезек · Астана",
+    "caption_en": "Park Avenue residential complex parking, phase 1 · Astana"
   },
   {
     "src": "assets/img/objects/obj12.webp",
-    "caption_ru": "Паркинг",
-    "caption_kk": "Паркинг",
-    "caption_en": "Parking"
+    "caption_ru": "Паркинг ЖК «Коркем 4»",
+    "caption_kk": "«Көркем 4» ТК паркингі",
+    "caption_en": "Korkem 4 residential complex parking"
   },
   {
     "src": "assets/img/objects/obj14.webp",
-    "caption_ru": "Паркинг",
-    "caption_kk": "Паркинг",
-    "caption_en": "Parking"
+    "caption_ru": "Склад VIVA Pharm · Алматы",
+    "caption_kk": "VIVA Pharm қоймасы · Алматы",
+    "caption_en": "VIVA Pharm warehouse · Almaty"
   },
   {
     "src": "assets/img/objects/obj20.webp",
@@ -133,15 +133,15 @@
   },
   {
     "src": "assets/img/objects/obj05.webp",
-    "caption_ru": "Спортивный комплекс · Астана",
-    "caption_kk": "Спорт кешені · Астана",
-    "caption_en": "Sports complex · Astana"
+    "caption_ru": "Авиационный ангар · Астана",
+    "caption_kk": "Авиациялық ангар · Астана",
+    "caption_en": "Aviation hangar · Astana"
   },
   {
     "src": "assets/img/objects/obj07.webp",
-    "caption_ru": "Производственное помещение",
-    "caption_kk": "Өндірістік үй-жай",
-    "caption_en": "Production space"
+    "caption_ru": "Ангар для воздушных судов · Астана",
+    "caption_kk": "Әуе кемелеріне арналған ангар · Астана",
+    "caption_en": "Aircraft hangar · Astana"
   },
   {
     "src": "assets/img/objects/work04.webp",
