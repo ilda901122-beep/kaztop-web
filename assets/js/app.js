@@ -17,7 +17,7 @@
   // Пусто → кнопки «Позвонить» ведут к секции контактов (#contacts).
   var PHONE_NUMBER = "+77013618252";
 
-  // Артём — консультация (отдельная кнопка WhatsApp в секции «Контакты»)
+  // Галымбек — консультация (отдельная кнопка WhatsApp в секции «Контакты»)
   var WHATSAPP_CONSULT = "77025193137";
 
   var SUPPORTED = ["kk", "ru", "en"];
@@ -689,7 +689,7 @@
       var el = document.getElementById(id);
       if (el) el.setAttribute("href", tel);
     });
-    // Артём — консультация (отдельная WhatsApp-кнопка в контактах)
+    // Галымбек — консультация (отдельная WhatsApp-кнопка в контактах)
     var wa2 = document.getElementById("contact-whatsapp-2");
     if (wa2 && WHATSAPP_CONSULT) {
       wa2.setAttribute("href", "https://wa.me/" + WHATSAPP_CONSULT + "?text=" + encodeURIComponent(intro));
